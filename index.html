@@ -148,10 +148,16 @@ section{padding:90px 0}
 .order-cta .tip{color:var(--muted);font-size:20px;margin-top:16px}
 
 /* free downloads box */
-.free-box{margin:26px 0 6px;padding:22px 26px;background:#fff;border:2px solid var(--gold);border-radius:14px}
-.free-box p{margin:0 0 14px;font-size:21px}
-.free-box .free-head{font-family:Cinzel,Georgia,serif;font-weight:700;font-size:24px;line-height:1.35;color:var(--navy);margin:0 0 10px}
-.free-box .btn{font-size:16px;padding:12px 26px}
+.free-frame{margin:28px 0 8px;padding:12px;background:var(--cream-2);border-radius:20px}
+.free-box{background:#fff;border:1.5px solid var(--gold);border-radius:14px;padding:28px 28px 30px;text-align:center}
+.free-box .free-head{font-size:21px;letter-spacing:.01em;margin:0 0 14px;color:var(--navy);white-space:nowrap}
+@media (max-width:860px){.free-box .free-head{white-space:normal}}
+.free-divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto 18px;max-width:300px}
+.free-divider::before,.free-divider::after{content:"";flex:1;height:1.5px;background:var(--gold)}
+.free-divider span{width:16px;height:16px;border:2px solid var(--gold);transform:rotate(45deg);position:relative;flex:none}
+.free-divider span::after{content:"";position:absolute;inset:4px;background:var(--gold);border-radius:50%}
+.free-box p{margin:0 auto 20px;font-size:21px;max-width:520px}
+.free-box .btn{font-size:17px;padding:14px 32px}
 
 /* computer-vs-phone ordering tip */
 .device-tip{display:flex;gap:16px;align-items:center;max-width:820px;margin:30px auto 0;padding:18px 24px;
@@ -397,11 +403,12 @@ footer .links a{margin:0 12px}
       <p>My name is Kristina Joy. I am an oil painter from Minnesota with a deep love for the Divine Will and the writings of the <em>Book of Heaven</em> by Luisa Piccarreta.</p>
       <p>Through God&rsquo;s grace, I created these songs to help myself and others pray the Rounds of the Divine Will, joining our prayers with Jesus as we long for the coming of His Kingdom on earth.</p>
       <p>I used AI technology to help bring these songs to life. But the true power of these songs comes not from the music. It comes from <strong>you</strong>, as you immerse yourself in God&rsquo;s Divine Will and pray them in your heart or with your lips. United with Jesus, your voice becomes one with His.</p>
-      <div class="free-box">
-        <p class="free-head">All of these songs are FREE as a digital download!</p>
-        <p>I donated every song as a free digital download to the Little Children in the Divine Will website, so anyone can listen, download, and pray along.</p>
+      <div class="free-frame"><div class="free-box">
+        <h3 class="free-head">Enjoy the Songs &mdash; Free to Download</h3>
+        <div class="free-divider" aria-hidden="true"><span></span></div>
+        <p>Every song has been donated to Little Children in the Divine Will, so everyone can listen, download, and pray along &mdash; completely free.</p>
         <a class="btn btn-gold" href="https://www.littlechildreninthedivinewill.com/sing-rounds-playlists" target="_blank" rel="noopener">Free Song Downloads</a>
-      </div>
+      </div></div>
       <blockquote class="quote">&ldquo;I was praying, and my sweet Jesus came, placing Himself near me in order to pray together with me; even more, His intelligence was reflected in mine, and I prayed with His; His voice echoed in mine, and I prayed with His word. But who can say the boundless effects of this prayer?&rdquo;
         <cite>Servant of God Luisa Piccarreta, <em>Book of Heaven</em>, Vol. 15, April 25, 1923</cite>
       </blockquote>
