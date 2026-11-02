@@ -147,6 +147,12 @@ section{padding:90px 0}
   background:#1f7a45;color:#fff;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:24px;display:grid;place-items:center}
 .order-cta .tip{color:var(--muted);font-size:20px;margin-top:16px}
 
+/* computer-vs-phone ordering tip */
+.device-tip{display:flex;gap:16px;align-items:center;max-width:820px;margin:30px auto 0;padding:18px 24px;
+  background:#e8f3ec;border:2px solid #1f7a45;border-radius:14px;font-size:21px;line-height:1.45;color:#1d3b2a;text-align:left}
+#order .device-tip{margin:0 auto 34px}
+.device-icon{font-size:40px;line-height:1;flex:none}
+
 /* closing quote */
 .closing-quote{background:var(--navy);color:#f6ecd3;position:relative;overflow:hidden;text-align:center}
 .closing-quote::before{content:"";position:absolute;inset:0;background:var(--bg) center/cover no-repeat;opacity:.14}
@@ -249,6 +255,11 @@ footer .links a{margin:0 12px}
         <a class="listen" href="#playlist-2">See the songs &amp; hear samples &darr;</a>
       </div>
     </div>
+    <div class="device-tip">
+      <span class="device-icon" aria-hidden="true">&#128187;</span>
+      <div><strong>Please order on a computer if you can.</strong> The order page is very hard to use on a phone.
+      If you only have a phone, <strong>turn your phone sideways</strong> before you start.</div>
+    </div>
     <p class="both">Both CDs are on the same order page, so you can get one or both and pay shipping once.<br>
       <a href="#order"><strong>See the easy step-by-step directions &darr;</strong></a></p>
   </div>
@@ -260,6 +271,12 @@ footer .links a{margin:0 12px}
       <div class="ornament"><span>&#10022;</span></div>
       <h2>How to Order, Step by Step</h2>
       <p>The order page is plain and a little old-fashioned, so here is exactly what to do. Your CD is printed when you order it and mailed straight to your door.</p>
+    </div>
+
+    <div class="device-tip">
+      <span class="device-icon" aria-hidden="true">&#128187;</span>
+      <div><strong>Please order on a computer if you can.</strong> The order page is very hard to use on a phone.
+      If you only have a phone, <strong>turn your phone sideways</strong> before you start.</div>
     </div>
 
     <div class="howto">
@@ -291,7 +308,7 @@ footer .links a{margin:0 12px}
     <div class="order-cta">
       <a class="btn btn-gold" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener">Go to the Order Page</a>
       <p class="tip">The order page opens in a new tab, so you can keep these directions open.<br>
-      It works best on a computer. Questions? Email <a href="mailto:kjoysky31@gmail.com">kjoysky31@gmail.com</a></p>
+      Remember: a computer is easiest. Questions? Email <a href="mailto:kjoysky31@gmail.com">kjoysky31@gmail.com</a></p>
     </div>
   </div>
 </section>
