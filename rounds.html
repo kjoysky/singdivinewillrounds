@@ -50,21 +50,22 @@ strong{font-weight:700;color:var(--navy)}
 /* top bar */
 .topbar{position:absolute;top:0;left:0;right:0;z-index:5;padding:18px 0}
 .topbar .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-.brand{font-family:Cinzel,serif;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.08em;font-size:16px}
-.nav a{color:#fff;text-decoration:none;font-family:Cinzel,serif;font-size:15px;letter-spacing:.08em;margin-left:22px;opacity:.9}
-.nav a:hover,.nav a.on{opacity:1;color:var(--gold-2)}
+.brand{font-family:Cinzel,serif;font-weight:700;color:var(--navy);text-decoration:none;letter-spacing:.08em;font-size:16px}
+.nav a{color:var(--navy);text-decoration:none;font-family:Cinzel,serif;font-size:15px;letter-spacing:.08em;margin-left:22px;opacity:.9}
+.nav a:hover,.nav a.on{opacity:1;color:#9a7524}
+.topbar{background:rgba(251,245,230,.88);border-bottom:1px solid rgba(201,160,70,.45)}
 
 /* hero */
-.hero{position:relative;min-height:46vh;display:flex;align-items:center;text-align:center;color:#fff;
+.hero{position:relative;min-height:46vh;display:flex;align-items:center;text-align:center;color:var(--navy);border-bottom:3px solid var(--gold);
   background:url(images/scene-throne.jpg) center 30%/cover no-repeat;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;
-  background:radial-gradient(ellipse at center,rgba(19,33,74,.6) 0%,rgba(19,33,74,.85) 70%,rgba(19,33,74,.96) 100%)}
+  background:radial-gradient(ellipse at center,rgba(251,245,230,.86) 0%,rgba(251,245,230,.72) 40%,rgba(251,245,230,.18) 85%,rgba(251,245,230,0) 100%)}
 .hero .wrap{position:relative;padding-top:110px;padding-bottom:50px}
-.back{display:inline-block;font-family:Arial,sans-serif;font-weight:700;font-size:19px;color:var(--gold-2);text-decoration:none;margin-bottom:18px}
+.back{display:inline-block;font-family:Arial,sans-serif;font-weight:700;font-size:19px;color:var(--navy-2);text-decoration:none;margin-bottom:18px;text-shadow:0 0 10px rgba(251,245,230,.95)}
 .back:hover{text-decoration:underline}
-.hero h1{color:#fff;font-size:clamp(40px,6.5vw,78px);letter-spacing:.03em;text-shadow:0 4px 30px rgba(0,0,0,.5);margin-bottom:.35em}
-.hero h1 em{font-style:normal;color:var(--gold-2)}
-.hero p.lead{font-size:clamp(24px,2.6vw,30px);max-width:760px;margin:0 auto;color:#f6ecd3}
+.hero h1{color:var(--navy);font-size:clamp(40px,6.5vw,78px);letter-spacing:.03em;text-shadow:0 0 24px rgba(251,245,230,.9),0 0 6px rgba(251,245,230,.9);margin-bottom:.35em}
+.hero h1 em{font-style:normal;color:var(--navy-2)}
+.hero p.lead{font-size:clamp(24px,2.6vw,30px);max-width:760px;margin:0 auto;color:var(--navy);text-shadow:0 0 14px rgba(251,245,230,.95),0 0 4px rgba(251,245,230,.95)}
 
 /* sections */
 section{padding:80px 0}
