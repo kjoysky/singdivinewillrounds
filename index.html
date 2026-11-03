@@ -49,7 +49,7 @@ h1,h2,h3{font-family:Cinzel,Georgia,serif;font-weight:700;color:var(--navy);line
 
 /* top bar */
 .topbar{position:absolute;top:0;left:0;right:0;z-index:5;padding:18px 0}
-.topbar .wrap{display:flex;justify-content:space-between;align-items:center}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .brand{font-family:Cinzel,serif;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.08em;font-size:16px}
 .nav a{color:#fff;text-decoration:none;font-family:Cinzel,serif;font-size:14px;letter-spacing:.08em;margin-left:22px;opacity:.9}
 .nav a:hover{opacity:1;color:var(--gold-2)}
@@ -189,6 +189,7 @@ footer{background:var(--navy);color:#cbbd98;text-align:center;padding:50px 0;fon
 footer a{color:var(--gold-2)}
 footer .links{margin:10px 0 16px}
 footer .links a{margin:0 12px}
+footer .contact{font-size:20px;margin:0 0 16px}
 
 /* mini player bar */
 .player{position:fixed;left:50%;bottom:18px;transform:translate(-50%,140%);z-index:20;
@@ -205,13 +206,19 @@ footer .links a{margin:0 12px}
 
 @media (max-width:860px){
   body{font-size:19px}
-  .nav{display:none}
+  .nav a{margin-left:14px;font-size:13px}
   .cds,.pl-grid,.about,.howto{grid-template-columns:1fr}
   .about > img{position:static}
   .howto-steps{grid-template-columns:1fr}
   section{padding:66px 0}
   .hero .covers img{width:110px}
   .player .bar{display:none}
+}
+@media (max-width:600px){
+  .topbar .wrap{justify-content:center}
+  .nav{text-align:center}
+  .nav a{display:inline-block;margin:4px 8px}
+  .hero .wrap{padding-top:170px}
 }
 </style>
 </head>
@@ -256,7 +263,7 @@ footer .links a{margin:0 12px}
       <p>A <strong>Round</strong> is a prayer in which we unite ourselves to Jesus in His Divine Will and journey through all of God&rsquo;s works in Creation, Redemption, and Sanctification. We offer Him love, praise, and thanks on behalf of everyone, throughout all time.</p>
       <p><strong>Round Songs</strong> are simply this prayer expressed through music.</p>
       <p class="ir-more">To learn more about what the Rounds are, why Jesus asked Luisa to pray them, how to pray a Round, and what Round Songs are, visit the Rounds page.</p>
-      <a class="btn btn-navy" href="rounds.html">Learn About the Rounds</a>
+      <a class="btn btn-navy" href="rounds.html">Learn more about Rounds</a>
     </div>
   </div>
 </section>
@@ -465,6 +472,7 @@ footer .links a{margin:0 12px}
       <a href="https://littlechildreninthedivinewill.com" target="_blank" rel="noopener">Little Children in the Divine Will</a>
       <a href="https://www.kristinajoy.com/kristinajoy" target="_blank" rel="noopener">Meet Kristina Joy</a>
     </div>
+    <div class="contact">Questions? Email <a href="mailto:kjoysky31@gmail.com">kjoysky31@gmail.com</a></div>
     <div>&copy; 2026 Kristina Joy Nelson. All rights reserved.</div>
   </div>
 </footer>
