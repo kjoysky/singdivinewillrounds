@@ -25,7 +25,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--cream);color:var(--ink);
-  font-family:"Cormorant Garamond",Georgia,serif;font-size:22px;line-height:1.6;font-variant-numeric:lining-nums}
+  font-family:"Cormorant Garamond",Georgia,serif;font-size:24px;font-weight:600;line-height:1.65;font-variant-numeric:lining-nums}
 img{max-width:100%;display:block}
 a{color:var(--navy-2)}
 h1,h2,h3{font-family:Cinzel,Georgia,serif;font-weight:700;color:var(--navy);line-height:1.25;margin:0 0 .5em}
@@ -51,7 +51,7 @@ strong{font-weight:700;color:var(--navy)}
 .topbar{position:absolute;top:0;left:0;right:0;z-index:5;padding:18px 0}
 .topbar .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .brand{font-family:Cinzel,serif;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.08em;font-size:16px}
-.nav a{color:#fff;text-decoration:none;font-family:Cinzel,serif;font-size:14px;letter-spacing:.08em;margin-left:22px;opacity:.9}
+.nav a{color:#fff;text-decoration:none;font-family:Cinzel,serif;font-size:15px;letter-spacing:.08em;margin-left:22px;opacity:.9}
 .nav a:hover,.nav a.on{opacity:1;color:var(--gold-2)}
 
 /* hero */
@@ -62,7 +62,7 @@ strong{font-weight:700;color:var(--navy)}
 .hero .wrap{position:relative;padding-top:110px;padding-bottom:80px}
 .hero h1{color:#fff;font-size:clamp(40px,6.5vw,78px);letter-spacing:.03em;text-shadow:0 4px 30px rgba(0,0,0,.5);margin-bottom:.35em}
 .hero h1 em{font-style:normal;color:var(--gold-2)}
-.hero p.lead{font-size:clamp(22px,2.5vw,29px);font-style:italic;max-width:760px;margin:0 auto;color:#f6ecd3}
+.hero p.lead{font-size:clamp(24px,2.6vw,30px);max-width:760px;margin:0 auto;color:#f6ecd3}
 
 /* sections */
 section{padding:80px 0}
@@ -71,7 +71,7 @@ h2{font-size:clamp(30px,3.8vw,42px);text-align:center}
 .read h3{font-size:24px}
 
 /* "Imagine" intro */
-.imagine p{font-size:26px;line-height:1.55;margin-bottom:1.1em}
+.imagine p{font-size:27px;line-height:1.55;margin-bottom:1.1em}
 .imagine p b{font-family:Cinzel,serif;font-weight:700;color:var(--gold);font-size:.9em;letter-spacing:.04em}
 .intro-end{text-align:center;font-size:24px}
 .intro-end em{color:var(--navy-2);font-weight:600}
@@ -84,35 +84,35 @@ h2{font-size:clamp(30px,3.8vw,42px);text-align:center}
 /* three works */
 .works{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:30px 0 34px}
 .work{background:#fff;border-radius:16px;padding:26px 22px;text-align:center;box-shadow:0 6px 22px rgba(19,33,74,.08);border-top:4px solid var(--gold)}
-.work .num{font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:15px;letter-spacing:.12em;color:var(--muted)}
+.work .num{font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:18px;letter-spacing:.12em;color:var(--muted)}
 .work .icon{font-size:38px;line-height:1;margin:10px 0 8px;color:var(--gold)}
 .work h3{font-size:21px;margin-bottom:.4em}
-.work p{font-size:20px;margin:0;line-height:1.5}
+.work p{font-size:22px;margin:0;line-height:1.5}
 
 /* quotes from the Book of Heaven */
 .quote{position:relative;margin:30px 0 34px;padding:30px 34px 26px 74px;background:#fff;
   border-left:5px solid var(--gold);border-radius:0 16px 16px 0;box-shadow:0 8px 26px rgba(19,33,74,.09);
-  font-style:italic;font-size:23px;line-height:1.6;color:#2a2a3a}
+  font-size:24px;line-height:1.65;color:#1f1f2e}
 .quote::before{content:"\201C";position:absolute;left:18px;top:6px;font-family:Georgia,serif;font-style:normal;
   font-size:84px;line-height:1;color:var(--gold)}
 .quote p{margin:0 0 .8em}
 .quote p:last-of-type{margin-bottom:0}
-.quote cite{display:block;margin-top:16px;font-style:normal;font-family:Cinzel,serif;font-size:15px;
+.quote cite{display:block;margin-top:16px;font-style:normal;font-family:Cinzel,serif;font-size:17px;
   letter-spacing:.06em;color:var(--muted)}
 .quote cite::before{content:"\2014\00a0"}
 .quote.dark{background:var(--navy);color:#f6ecd3;border-left-color:var(--gold-2)}
 .quote.dark::before{color:var(--gold-2)}
 .quote.dark cite{color:var(--gold-2)}
-.says{font-family:Cinzel,serif;font-size:17px;letter-spacing:.08em;color:var(--gold);margin:30px 0 -14px;font-weight:700}
+.says{font-family:Cinzel,serif;font-size:19px;letter-spacing:.08em;color:var(--gold);margin:30px 0 -14px;font-weight:700}
 
 /* reference lines that describe a passage */
-.ref{padding-left:18px;border-left:2px solid var(--cream-2);color:var(--muted)}
+.ref{padding-left:18px;border-left:3px solid var(--gold-2);color:#4a3f2c}
 section.alt .ref{border-left-color:#e2d3ac}
 
 /* scripture */
 .scripture{text-align:center;margin:26px auto 0;max-width:640px}
 .scripture q{display:block;font-family:Cinzel,serif;font-weight:700;font-size:clamp(24px,3vw,32px);color:var(--navy);line-height:1.35;quotes:"\201C" "\201D"}
-.scripture span{display:block;margin-top:10px;font-size:18px;color:var(--muted);letter-spacing:.04em}
+.scripture span{display:block;margin-top:10px;font-size:20px;color:var(--muted);letter-spacing:.04em}
 
 /* six purposes */
 .purpose{margin-top:60px}
@@ -133,8 +133,8 @@ section.alt .ref{border-left-color:#e2d3ac}
 .prayer{margin:30px auto 34px;max-width:680px;padding:40px 40px 34px;text-align:center;
   background:#fffdf7;border:1px solid var(--gold);border-radius:6px;outline:6px solid #fffdf7;
   box-shadow:0 0 0 7px var(--gold-2),0 14px 34px rgba(19,33,74,.12)}
-.prayer .label{font-family:Cinzel,serif;font-weight:700;font-size:15px;letter-spacing:.18em;color:var(--gold);margin-bottom:16px}
-.prayer p{font-style:italic;font-size:23px;line-height:1.6;color:var(--navy);margin:0 0 .75em}
+.prayer .label{font-family:Cinzel,serif;font-weight:700;font-size:17px;letter-spacing:.18em;color:var(--gold);margin-bottom:16px}
+.prayer p{font-size:24px;line-height:1.6;color:var(--navy);margin:0 0 .75em}
 .prayer p:last-child{margin:0;font-weight:600}
 
 .exclaim{font-family:Cinzel,serif;font-weight:700;font-size:23px;color:var(--navy);text-align:center;margin:44px 0 0}
@@ -143,7 +143,7 @@ section.alt .ref{border-left-color:#e2d3ac}
 /* songs section */
 .songs-lead{text-align:center;font-size:27px;color:var(--navy);font-weight:600;margin-bottom:1.2em}
 .places{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:8px 0 26px;padding:0;list-style:none}
-.places li{background:#fff;border:1px solid var(--gold);border-radius:999px;padding:6px 18px;font-size:19px;color:var(--navy)}
+.places li{background:#fff;border:1px solid var(--gold);border-radius:999px;padding:6px 18px;font-size:22px;color:var(--navy)}
 .refrain{text-align:center;font-family:Cinzel,serif;font-weight:700;font-size:28px;color:var(--gold);margin:18px 0 28px}
 
 /* closing */
@@ -166,13 +166,14 @@ footer .links a{margin:0 12px}
   .nav a{margin-left:14px;font-size:13px}
 }
 @media (max-width:600px){
-  body{font-size:21px}
+  body{font-size:22px}
   .topbar .wrap{justify-content:center}
   .nav{text-align:center}
   .nav a{display:inline-block;margin:4px 8px}
   .hero .wrap{padding-top:130px}
   .imagine p{font-size:23px}
-  .quote{padding:56px 22px 22px;font-size:21px}
+  .quote{padding:56px 22px 22px;font-size:22px}
+  .prayer p{font-size:22px}
   .quote::before{left:16px;top:2px;font-size:70px}
   .prayer{padding:30px 22px 26px}
 }
