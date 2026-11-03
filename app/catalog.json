@@ -9,7 +9,7 @@
    "id": "playlist-1",
    "title": "Playlist 1",
    "cover": "art/playlist-1-cover.jpg",
-   "banner": "art/playlist-1-banner.jpg",
+   "banner": "art/playlist-1-hero.jpg",
    "songs": [
     {
      "id": "in-all-you-have-made",
@@ -137,7 +137,7 @@
    "id": "playlist-2",
    "title": "Playlist 2",
    "cover": "art/playlist-2-cover.jpg",
-   "banner": "art/playlist-2-banner.jpg",
+   "banner": "art/playlist-2-hero.jpg",
    "songs": [
     {
      "id": "let-my-love-meet-you-dancing-with-the-stars",
