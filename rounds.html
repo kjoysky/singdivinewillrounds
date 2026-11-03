@@ -53,14 +53,14 @@ strong{font-weight:700;color:var(--navy)}
 .brand{font-family:Cinzel,serif;font-weight:700;color:var(--navy);text-decoration:none;letter-spacing:.08em;font-size:16px}
 .nav a{color:var(--navy);text-decoration:none;font-family:Cinzel,serif;font-size:15px;letter-spacing:.08em;margin-left:22px;opacity:.9}
 .nav a:hover,.nav a.on{opacity:1;color:#9a7524}
-.topbar{position:relative;background:var(--cream);border-bottom:1px solid rgba(201,160,70,.45)}
+.topbar{background:rgba(251,245,230,.88);border-bottom:1px solid rgba(201,160,70,.45)}
 
 /* hero */
 .hero{position:relative;min-height:46vh;display:flex;align-items:center;text-align:center;color:var(--navy);border-bottom:3px solid var(--gold);
-  background:url(images/scene-throne-soft.jpg) center top/cover no-repeat;overflow:hidden}
+  background:url(images/scene-throne-soft.jpg) center 30%/cover no-repeat;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;
   background:radial-gradient(ellipse 52% 62% at 52% 52%,rgba(251,245,230,.84) 0%,rgba(251,245,230,.66) 45%,rgba(251,245,230,0) 100%),linear-gradient(90deg,rgba(251,245,230,0) 0%,rgba(251,245,230,0) 28%,rgba(251,245,230,.22) 60%,rgba(251,245,230,.38) 100%)}
-.hero .wrap{position:relative;padding-top:56px;padding-bottom:50px}
+.hero .wrap{position:relative;padding-top:110px;padding-bottom:50px}
 .back{display:inline-block;font-family:Arial,sans-serif;font-weight:700;font-size:19px;color:var(--navy-2);text-decoration:none;margin-bottom:18px;text-shadow:0 0 10px rgba(251,245,230,.95)}
 .back:hover{text-decoration:underline}
 .page-links{text-align:center;margin:44px 0 0;font-family:Arial,sans-serif;font-weight:700;font-size:20px}
@@ -180,12 +180,6 @@ footer .links a{margin:0 12px}
 footer .copy{font-size:14px;opacity:.85}
 footer .contact{font-size:20px;margin:0 0 16px}
 
-@media (min-width:861px){
-  .hero{align-items:flex-end}
-  .hero .wrap{padding-top:clamp(170px,18vw,350px);padding-bottom:46px}
-  .hero::before{background:radial-gradient(ellipse 50% 46% at 52% 74%,rgba(251,245,230,.86) 0%,rgba(251,245,230,.66) 50%,rgba(251,245,230,0) 100%),linear-gradient(90deg,rgba(251,245,230,0) 0%,rgba(251,245,230,0) 28%,rgba(251,245,230,.22) 60%,rgba(251,245,230,.38) 100%)}
-  .hero .back{position:absolute;top:22px;left:28px;margin:0;background:rgba(251,245,230,.85);padding:6px 14px;border-radius:8px;text-shadow:none}
-}
 @media (max-width:820px){
   .works{grid-template-columns:1fr}
   .nav a{margin-left:14px;font-size:13px}
@@ -195,7 +189,7 @@ footer .contact{font-size:20px;margin:0 0 16px}
   .topbar .wrap{justify-content:center}
   .nav{text-align:center}
   .nav a{display:inline-block;margin:4px 8px}
-  .hero .wrap{padding-top:40px}
+  .hero .wrap{padding-top:130px}
   .imagine p{font-size:23px}
   .quote{padding:56px 22px 22px;font-size:22px}
   .prayer p{font-size:22px}
