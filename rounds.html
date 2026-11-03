@@ -191,6 +191,11 @@ footer .contact{font-size:20px;margin:0 0 16px}
   .quote::before{left:16px;top:2px;font-size:70px}
   .prayer{padding:30px 22px 26px}
 }
+
+.share{margin:40px 0 0;text-align:center}
+.share p{margin:0 0 14px;font-size:22px;color:#f6ecd3}
+.share button{cursor:pointer;background:none}
+.share .share-msg{min-height:1.4em;margin:12px 0 0;font-family:Arial,sans-serif;font-weight:700;font-size:19px;color:var(--gold-2)}
 </style>
 </head>
 <body id="top">
@@ -468,6 +473,11 @@ footer .contact{font-size:20px;margin:0 0 16px}
         <a class="btn btn-ghost" href="index.html#playlist-1">Hear Song Samples</a>
       </div>
     </div>
+    <div class="share">
+      <p>Know someone who would love these songs?</p>
+      <button type="button" class="btn btn-ghost" id="shareBtn" data-url="https://singdivinewillrounds.com/rounds.html" data-title="What Are Round Songs?">Share This Page</button>
+      <p class="share-msg" id="shareMsg" aria-live="polite"></p>
+    </div>
     <p class="page-links"><a href="#top">&uarr; Back to Top</a><a href="index.html">&larr; Back to Home</a></p>
   </div>
 </section>
@@ -484,5 +494,21 @@ footer .contact{font-size:20px;margin:0 0 16px}
   </div>
 </footer>
 
+<script>
+(function(){
+  var b=document.getElementById('shareBtn'),m=document.getElementById('shareMsg');
+  if(!b)return;
+  var url=b.getAttribute('data-url'),title=b.getAttribute('data-title');
+  function copied(){m.textContent='Link copied! Paste it into an email or message.';}
+  function fallback(){
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(url).then(copied,function(){m.textContent='Copy this link: '+url;});}
+    else{m.textContent='Copy this link: '+url;}
+  }
+  b.addEventListener('click',function(){
+    if(navigator.share){navigator.share({title:title,url:url}).catch(function(){});}
+    else{fallback();}
+  });
+})();
+</script>
 </body>
 </html>

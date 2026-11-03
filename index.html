@@ -223,6 +223,11 @@ footer .contact{font-size:20px;margin:0 0 16px}
   .nav a{display:inline-block;margin:4px 8px}
   .hero .wrap{padding-top:170px}
 }
+
+.share{margin:40px 0 0;text-align:center}
+.share p{margin:0 0 14px;font-size:22px;color:#f6ecd3}
+.share button{cursor:pointer;background:none}
+.share .share-msg{min-height:1.4em;margin:12px 0 0;font-family:Arial,sans-serif;font-weight:700;font-size:19px;color:var(--gold-2)}
 </style>
 </head>
 <body>
@@ -462,6 +467,11 @@ footer .contact{font-size:20px;margin:0 0 16px}
       <cite>Servant of God Luisa Piccarreta, <em>Book of Heaven</em>, Vol. 19, March 14, 1926</cite>
     </blockquote>
     <div class="closing-btn"><a class="btn btn-gold" href="rounds.html">What Are Rounds?</a></div>
+    <div class="share">
+      <p>Know someone who would love these songs?</p>
+      <button type="button" class="btn btn-ghost" id="shareBtn" data-url="https://singdivinewillrounds.com/" data-title="Sing Divine Will Rounds">Share This Page</button>
+      <p class="share-msg" id="shareMsg" aria-live="polite"></p>
+    </div>
     <p class="page-links"><a href="#top">&uarr; Back to Top</a></p>
   </div>
 </section>
@@ -521,6 +531,22 @@ audio.addEventListener('ended',()=>{
   const next=current&&current.nextElementSibling;
   if(next) next.querySelector('.play').click(); else setIcons();
 });
+</script>
+<script>
+(function(){
+  var b=document.getElementById('shareBtn'),m=document.getElementById('shareMsg');
+  if(!b)return;
+  var url=b.getAttribute('data-url'),title=b.getAttribute('data-title');
+  function copied(){m.textContent='Link copied! Paste it into an email or message.';}
+  function fallback(){
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(url).then(copied,function(){m.textContent='Copy this link: '+url;});}
+    else{m.textContent='Copy this link: '+url;}
+  }
+  b.addEventListener('click',function(){
+    if(navigator.share){navigator.share({title:title,url:url}).catch(function(){});}
+    else{fallback();}
+  });
+})();
 </script>
 </body>
 </html>
