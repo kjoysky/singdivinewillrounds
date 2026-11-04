@@ -51,8 +51,9 @@ h1,h2,h3{font-family:Cinzel,Georgia,serif;font-weight:700;color:var(--navy);line
 .topbar{position:absolute;top:0;left:0;right:0;z-index:5;padding:18px 0}
 .topbar .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .brand{font-family:Cinzel,serif;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.08em;font-size:16px}
-.nav a{color:#fff;text-decoration:none;font-family:Cinzel,serif;font-size:14px;letter-spacing:.08em;margin-left:22px;opacity:.9}
-.nav a:hover{opacity:1;color:var(--gold-2)}
+.nav a{color:#fff;text-decoration:none;font-family:Cinzel,serif;font-size:15px;letter-spacing:.08em;margin-left:22px;opacity:.9}
+.nav a:hover{opacity:1;color:var(--gold-2);text-decoration:underline}
+.topbar{border-bottom:1px solid rgba(232,198,106,.35)}
 
 /* hero */
 .hero{position:relative;min-height:92vh;display:flex;align-items:center;text-align:center;color:#fff;
@@ -151,6 +152,12 @@ section{padding:90px 0}
 .free-frame{margin:28px 0 8px;padding:12px;background:var(--cream-2);border-radius:20px}
 .free-box{background:#fff;border:1.5px solid var(--gold);border-radius:14px;padding:28px 28px 30px;text-align:center}
 .free-box .free-head{font-size:21px;letter-spacing:.01em;margin:0 0 14px;color:var(--navy);white-space:nowrap}
+@media (max-width:1100px){
+  .topbar .wrap{justify-content:center;flex-direction:column;gap:6px}
+  .nav{text-align:center}
+  .nav a{display:inline-block;margin:4px 11px}
+  .hero .wrap{padding-top:140px}
+}
 @media (max-width:860px){.free-box .free-head{white-space:normal}}
 .free-divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto 18px;max-width:300px}
 .free-divider::before,.free-divider::after{content:"";flex:1;height:1.5px;background:var(--gold)}
@@ -210,7 +217,7 @@ footer .contact{font-size:20px;margin:0 0 16px}
 
 @media (max-width:860px){
   body{font-size:19px}
-  .nav a{margin-left:14px;font-size:13px}
+  .nav a{font-size:14px}
   .cds,.pl-grid,.about,.howto{grid-template-columns:1fr}
   .about > img{position:static}
   .howto-steps{grid-template-columns:1fr}
@@ -235,11 +242,10 @@ footer .contact{font-size:20px;margin:0 0 16px}
 
 <header class="topbar">
   <div class="wrap">
-    <span class="brand">SING DIVINE WILL ROUNDS</span>
+    <a class="brand" href="index.html">SING DIVINE WILL ROUNDS</a>
     <nav class="nav">
       <a href="#cds">The CDs</a>
-      <a href="#playlist-1">Playlist 1</a>
-      <a href="#playlist-2">Playlist 2</a>
+      <a href="#playlist-1">Songs</a>
       <a href="#about">About</a>
       <a href="rounds.html">What Are Rounds?</a>
       <a href="#order">How to Order</a>
