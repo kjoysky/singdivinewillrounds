@@ -114,6 +114,17 @@ section{padding:90px 0}
 .track .num{font-family:Cinzel,serif;color:var(--gold-2);width:26px;text-align:right;font-size:17px;flex:none}
 .track .thumb{width:96px;height:54px;object-fit:cover;border-radius:6px;border:1.5px solid var(--gold);flex:none}
 @media (max-width:520px){.track .thumb{width:72px;height:40px}}
+.pl-grid > *{min-width:0}
+.track .title{min-width:0}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (max-width:600px){
+  .track{gap:10px;padding:12px 2px}
+  .track .num{width:18px;font-size:15px}
+  .track .thumb{width:60px;height:34px}
+  .track .title{font-size:19px;line-height:1.25}
+  .track .time{font-size:15px}
+  .play{width:36px;height:36px}
+}
 .track .title{flex:1;font-size:21px;color:#fff}
 .track .time{color:#cbbd98;font-size:18px;flex:none}
 .play{flex:none;width:40px;height:40px;border-radius:50%;border:2px solid var(--gold-2);background:transparent;
