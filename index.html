@@ -83,7 +83,13 @@ section{padding:90px 0}
 .section-head p{max-width:680px;margin:0 auto;color:var(--muted)}
 
 /* CDs */
-.cds{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.cds{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px}
+@media (max-width:1100px) and (min-width:861px){.cds{grid-template-columns:1fr 1fr}}
+.cd-app .app-shot{height:300px;width:auto;border-radius:22px;border:2px solid var(--gold);margin:0 auto 22px;box-shadow:0 10px 26px rgba(19,33,74,.25)}
+.app-shots{display:flex;gap:16px;overflow-x:auto;padding:6px 4px 14px;margin:8px 0 18px;scroll-snap-type:x mandatory}
+.app-shots img{height:420px;width:auto;flex:none;border-radius:24px;border:2px solid var(--gold);scroll-snap-align:center}
+@media (max-width:600px){.app-shots img{height:360px}}
+.app-shots-tip{text-align:center;font-size:17px;color:var(--muted);margin:0 0 6px}
 .cd{background:#fff;border-radius:18px;padding:30px;text-align:center;
   box-shadow:0 18px 50px rgba(19,33,74,.12);border:1px solid var(--cream-2)}
 .cd img{border-radius:10px;margin:0 auto 22px}
@@ -337,8 +343,8 @@ footer .contact{font-size:20px;margin:0 0 16px}
   <div class="wrap">
     <div class="section-head">
       <div class="ornament"><span>&#10022;</span></div>
-      <h2>The CDs</h2>
-      <p>Two albums of round songs to sing, pray, and offer with Jesus for every soul. Each CD comes in a jewel case with full-color artwork.</p>
+      <h2>The CDs &amp; the App</h2>
+      <p>Two albums of round songs to sing, pray, and offer with Jesus for every soul. Each CD comes in a jewel case with full-color artwork. Or keep every song on your iPhone with the Sing Rounds app.</p>
     </div>
     <div class="cds">
       <div class="cd">
@@ -356,6 +362,14 @@ footer .contact{font-size:20px;margin:0 0 16px}
         <div class="price">$15 <small>plus shipping</small></div>
         <a class="btn btn-navy" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener">Order Playlist 2</a>
         <a class="listen" href="#playlist-2">See the songs &amp; hear samples &darr;</a>
+      </div>
+      <div class="cd cd-app">
+        <img class="app-shot" src="images/app/1-home.jpg" alt="The Sing Rounds app home screen on iPhone">
+        <h3>The App</h3>
+        <div class="meta">For iPhone &middot; first 5 songs free</div>
+        <div class="price">$14.99 <small>a year</small></div>
+        <a class="btn btn-navy" href="#app-features">Learn about the App</a>
+        <a class="listen" href="https://apps.apple.com/us/app/sing-divine-will-rounds/id6831215446" target="_blank" rel="noopener">Get it on the App Store &rarr;</a>
       </div>
     </div>
     <div class="device-tip">
@@ -545,7 +559,7 @@ footer .contact{font-size:20px;margin:0 0 16px}
         <p>The songs are always free to download on the <a href="https://www.littlechildreninthedivinewill.com/sing-rounds-playlists">Little Children in the Divine Will</a> website. <strong>Those who subscribe to the app are simply paying for an ad-free, easy way to keep all the songs in one place and pray their favorites again and again.</strong> It also helps me pay for the ongoing maintenance of the website, domain, and app developer costs.</p>
         <p style="margin-bottom:0">More songs are on the way! When I add new songs, they show up in the app on their own, so there is no need to keep checking back on the Little Children website.</p>
       </div>
-      <h3 class="app-benefits-head">Features of the App</h3>
+      <h3 class="app-benefits-head" id="app-features">Features of the App</h3>
       <ul class="app-list">
         <li>All Playlists</li>
         <li>Ad-free streaming of songs</li>
@@ -555,6 +569,8 @@ footer .contact{font-size:20px;margin:0 0 16px}
         <li>Sleep timer for drifting off in prayer</li>
         <li>New songs added automatically</li>
       </ul>
+      <p class="app-shots-tip">A look inside the app (slide to see more)</p>
+      <div class="app-shots"><img src="images/app/0-welcome.jpg" alt="Welcome screen" loading="lazy"><img src="images/app/1-home.jpg" alt="Library with all playlists" loading="lazy"><img src="images/app/2-playlist.jpg" alt="A playlist page" loading="lazy"><img src="images/app/3-nowplaying.jpg" alt="Now Playing with the song painting" loading="lazy"><img src="images/app/4-lyrics.jpg" alt="Big, easy-to-read lyrics" loading="lazy"><img src="images/app/5-about.jpg" alt="About the Rounds" loading="lazy"><img src="images/app/6-favorites.jpg" alt="Your Favorites" loading="lazy"></div>
       <p class="app-note">The first 5 songs are free in the app. The full library is $14.99 a year or $2.99 a month.</p>
       <div style="text-align:center;margin-top:18px"><a class="app-badge" href="https://apps.apple.com/us/app/sing-divine-will-rounds/id6831215446" target="_blank" rel="noopener"><img src="images/app-store-badge.svg" alt="Download on the App Store"></a></div>
     </div></div>
