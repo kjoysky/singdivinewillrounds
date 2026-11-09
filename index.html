@@ -58,6 +58,14 @@ h1,h2,h3{font-family:Cinzel,Georgia,serif;font-weight:700;color:var(--navy);line
 .topbar .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .brand{font-family:Cinzel,serif;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.08em;font-size:15px}
 .nav a{color:#fff;text-decoration:none;font-family:Cinzel,serif;font-weight:700;font-size:14px;letter-spacing:.08em;margin-left:22px;text-shadow:0 1px 3px rgba(0,0,0,.9),0 0 10px rgba(0,0,0,.6)}
+.nav a.on{color:var(--gold-2);text-decoration:underline;text-decoration-color:var(--gold-2);text-decoration-thickness:3px;text-underline-offset:7px}
+.page-banner{background:var(--navy);color:#fff;text-align:center;position:relative;overflow:hidden;padding:120px 0 50px}
+.page-banner::before{content:"";position:absolute;inset:0;background:url(images/scene-dance.jpg) center/cover no-repeat;opacity:.22}
+.page-banner .wrap{position:relative}
+.page-banner h1{color:#fff;font-size:clamp(30px,4.6vw,52px);margin:0}
+.page-banner .back{display:inline-block;margin-bottom:14px;font-family:Arial,sans-serif;font-weight:700;font-size:17px;color:var(--gold-2);text-decoration:none}
+.page-banner .back:hover{text-decoration:underline}
+@media (max-width:600px){.page-banner{padding-top:150px}}
 .nav a:hover{opacity:1;color:var(--gold-2);text-decoration:underline;text-decoration-color:var(--gold-2);text-decoration-thickness:3px;text-underline-offset:7px}
 .topbar{border-bottom:1px solid rgba(232,198,106,.35)}
 
@@ -319,7 +327,7 @@ footer .contact{font-size:18px;margin:0 0 16px}
       <a href="#cds">The CDs</a>
       <a href="#playlist-1">Songs</a>
       <a href="#app">The App</a>
-      <a href="#about">About</a>
+      <a href="about.html">About</a>
       <a href="rounds.html">What Are Rounds?</a>
       <a href="#order">How to Order</a>
     </nav>
@@ -554,42 +562,6 @@ footer .contact{font-size:18px;margin:0 0 16px}
   </div>
 </section>
 
-<section id="about">
-  <div class="wrap about">
-    <img src="images/scene-throne.jpg" alt="Painting of a queen kneeling before the King's throne in heaven, with Jesus crowned with thorns">
-    <div>
-      <div class="ornament" style="margin-left:0"><span>&#10022;</span></div>
-      <h2>About the Songs</h2>
-      <p><strong>Hello! My name is Kristina Joy.</strong> I am an oil painter from Minnesota with a deep love for the Divine Will and the writings of the <em>Book of Heaven</em> by Luisa Piccarreta.</p>
-      <p>When I first began praying the Rounds of the Divine Will, it was a real struggle. Little by little, they became easier as I understood them more. But it was when God gave me the idea to set the Rounds to music that I began to LOVE praying them.</p>
-      <p>Together with the Holy Spirit (it is mostly Him) and the assistance of AI technology, I create these Round Songs to help myself and others pray the Rounds of the Divine Will, joining our prayers with Jesus as we long for the coming of His Kingdom on earth. Technology can be used for evil or for good, and I want to use the tools available today for God&rsquo;s glory.</p>
-      <p>After hearing them, a number of people asked for a hard copy of the songs. So I created this website, where you can <a href="#cds">order the songs on CD</a>.</p>
-      <div class="how-made">
-        <h3>How Do I Create the Songs?</h3>
-        <p>First, God gives me an idea for a song. Then I do research from different sources, like the Bible, the <em>Book of Heaven</em>, and <em>The Hours of the Passion</em>. Often a phrase, a line, or a theme will pop up in my head.</p>
-        <div class="how-example"><p><strong>For example,</strong> in the song &ldquo;Lean on me Jesus,&rdquo; the very last part is when Judas kisses Jesus. God gave me the idea of the children of the Divine Will kissing Jesus in that same kiss, so that Jesus would be relieved, consoled, and loved in that very act of betrayal.</p></div>
-        <p>Then I work with AI to turn my ideas into lyrics. It often suggests lines and helps with the rhythm and rhyme, and I edit and correct them until the words say what I believe God wants them to say.</p>
-        <p>Lastly, I use AI to bring the music to life.</p>
-      </div>
-      <p>Music is an incredible vehicle to pray the Rounds.</p>
-      <p>But the true power of these songs comes not from the music. It comes from <strong>YOU</strong>, as you immerse yourself in God&rsquo;s Divine Will and pray them in your heart or with your lips. United with Jesus, your voice becomes one with His. These songs are simply a tool to help us pray the Rounds.</p>
-      <div class="free-frame"><div class="free-box">
-        <h3 class="free-head">Enjoy the Songs &mdash; Free to Download</h3>
-        <div class="free-divider" aria-hidden="true"><span></span></div>
-        <p>Every song has been donated to Little Children in the Divine Will, so everyone can listen, download, and pray along &mdash; completely free.</p>
-        <a class="btn btn-gold" href="https://www.littlechildreninthedivinewill.com/sing-rounds-playlists" target="_blank" rel="noopener">Free Song Downloads</a>
-        <a class="btn btn-outline" href="lyrics/Sing-Divine-Will-Rounds-Lyrics.pdf" target="_blank" rel="noopener">Lyrics PDF</a>
-      </div></div>
-      <blockquote class="quote">&ldquo;I was praying, and my sweet Jesus came, placing Himself near me in order to pray together with me; even more, His intelligence was reflected in mine, and I prayed with His; His voice echoed in mine, and I prayed with His word. But who can say the boundless effects of this prayer?&rdquo;
-        <cite>Servant of God Luisa Piccarreta, <em>Book of Heaven</em>, Vol. 15, April 25, 1923</cite>
-      </blockquote>
-      <p class="esther-intro">As you pray or sing these rounds, you become like Esther before the King&rsquo;s throne, asking for mercy upon humanity.</p>
-      <blockquote class="quote">&ldquo;This creature in Our Will is the New Esther wanting to rescue her peoples. O! how Happy We are to keep her always with Us in Our Will because, through her, We feel more inclined to use Mercy, to concede Graces, to Forgive the most obstinate sinners, and to lessen the pains of the purging souls. Poor daughter! She has a thought for everyone, and a pain similar to Ours, seeing the human family swimming in Our Will without recognizing It&mdash;living in the middle of enemies in the most wretched misery.&rdquo;
-        <cite>Servant of God Luisa Piccarreta, <em>Book of Heaven</em>, Vol. 36, October 30, 1938</cite>
-      </blockquote>
-    </div>
-  </div>
-</section>
 
 
 
@@ -604,7 +576,7 @@ footer .contact{font-size:18px;margin:0 0 16px}
       <p>I would not be content if, in all created things, in which my Will has first place, I did not hear the voice of my little newborn who, rendering the whole Creation speaking, gives Me love for love, glory and adoration for each thing created by Me.&rdquo;</p>
       <cite>Servant of God Luisa Piccarreta, <em>Book of Heaven</em>, Vol. 19, March 14, 1926</cite>
     </blockquote>
-    <div class="closing-btn"><a class="btn btn-gold" href="rounds.html">What Are Rounds?</a></div>
+    <div class="closing-btn"><a class="btn btn-gold" href="about.html">About the Songs</a> <a class="btn btn-gold" href="rounds.html">What Are Rounds?</a></div>
     <div class="share">
       <p>Know someone who would love these songs?</p>
       <button type="button" class="btn btn-ghost" id="shareBtn" data-url="https://singdivinewillrounds.com/" data-title="Sing Divine Will Rounds">Share This Page</button>
