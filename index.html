@@ -556,6 +556,91 @@ section.hero{padding:0}
 .howto-pic a{display:block}
 .zoom-tip{display:none}
 @media (max-width:860px){.zoom-tip{display:block;text-align:center;margin:8px 0 0;font-size:16px;color:var(--muted)}}
+/* DESKTOP readable + bigger (11/09) */
+@media (min-width:861px){
+  body{font-size:20px}
+  .section-head h2{font-size:clamp(36px,4vw,50px)}
+  .section-head p{font-size:21px}
+  footer{font-size:18px}
+  footer .links a{font-size:19px}
+  footer .contact{font-size:20px}
+  footer .copy{font-size:15px}
+  .share p{font-size:22px}
+  .page-links{font-size:20px}
+  .nav a{font-size:16px}
+}
+@media (min-width:861px){
+  /* first screen */
+  .showcase{--ph:clamp(195px,calc(100vh - 462px),380px)}
+  .hero p.lead{font-size:clamp(18px,min(2.1vw,3.5vh),24px)}
+  .show-label{font-size:clamp(16px,2.8vh,20px)!important;padding:min(10px,1.4vh) 22px!important}
+  .hero .listen-cta .btn{font-size:clamp(16px,2.8vh,19px)!important;padding:min(14px,2vh) 30px!important}
+  .hero-badge img{height:clamp(48px,7vh,58px)}
+  /* CDs & app */
+  .cds-sec .section-head p{font-size:20px}
+  .cds-sec .cds{max-width:1140px;gap:26px}
+  .cds-sec .cd h3{font-size:30px}
+  .cds-sec .cd .meta{font-size:21px}
+  .cds-sec .cd .price{font-size:32px}
+  .cds-sec .cd .price small{font-size:24px}
+  .cds-sec .cd .btn{font-size:20px;padding:15px 18px}
+  .cds-sec .cd-app .phone{--ph:clamp(240px,26vw,300px)}
+  .cd-once p{font-size:21px}
+  .order-tips p{font-size:20px}
+  .tip-head{font-size:21px}
+  .lyrics-line{font-size:22px}
+  /* order */
+  .order-sec .order-tips p{font-size:20px}
+  .see-head{font-size:23px}
+  .order-sec .page-label{font-size:22px}
+  .order-sec .big-steps li{font-size:22px;padding-left:64px;min-height:52px}
+  .order-sec .big-steps li::before{width:48px;height:48px;font-size:24px}
+  .order-sec .order-cta .tip{font-size:20px}
+  .order-sec .howto-pic{max-width:960px}
+  /* playlists (match mockup) */
+  .playlist .wrap{max-width:1240px}
+  .playlist .section-head p{font-size:22px}
+  .pl-grid{grid-template-columns:1.5fr 1fr!important;gap:40px!important}
+  .pl-panel{padding:20px 22px 12px}
+  .pl-panel .sample-note{font-size:21px;margin-bottom:12px}
+  .mini-play{width:30px;height:30px}
+  .mini-play::after{left:11px;top:8px;border-left-width:11px;border-top-width:7px;border-bottom-width:7px}
+  .pl-panel .track{gap:18px;padding:10px 12px}
+  .pl-panel .play{width:48px;height:48px}
+  .pl-panel .play svg{width:17px;height:17px}
+  .pl-panel .track .num{font-size:20px;width:30px}
+  .pl-panel .track .thumb{width:112px;height:63px}
+  .pl-panel .track .title{font-size:22px}
+  .pl-panel .track .time{font-size:20px}
+  .pl-side .preview-note{font-size:20px}
+  .pl-order{font-size:23px!important;padding:18px 20px!important;max-width:480px}
+  .pl-how{font-size:21px}
+  .pl-side .pc-tip{font-size:19px}
+  /* app section */
+  .app-sec .free-frame{max-width:1000px!important}
+  .app-sec .free-box{max-width:960px}
+  .app-cta p{font-size:20px}
+  .app-cta .app-badge img{height:60px}
+  .app-shots-tip{font-size:20px}
+  .app-shots{--ph:330px}
+  .app-note{font-size:20px}
+  .app-story{max-width:820px}
+  .app-story p{font-size:20px}
+  .app-benefits-head{font-size:28px}
+  .app-list li{font-size:20px}
+  /* closing */
+  .closing-quote blockquote{font-size:23px}
+  .closing-quote cite{font-size:18px}
+}
+@media (min-width:861px) and (max-width:1199px){
+  .pl-grid{grid-template-columns:1fr!important;max-width:900px;margin:0 auto}
+  .pl-side{display:grid;grid-template-columns:1fr 1fr;gap:10px 30px;align-items:center;text-align:center}
+  .pl-side > img{grid-row:1/6}
+  .pl-side .preview-note{margin:0}
+  .pl-order{margin:6px auto 0!important;font-size:20px!important}
+  .pl-how{margin:6px 0 0}
+  .pl-side .pc-tip{margin:6px auto 0}
+}
 </style>
 </head>
 <body>
