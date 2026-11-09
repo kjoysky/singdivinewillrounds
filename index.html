@@ -571,7 +571,7 @@ section.hero{padding:0}
 }
 @media (min-width:861px){
   /* first screen */
-  .showcase{--ph:clamp(195px,calc(100vh - 462px),380px)}
+  .showcase{--ph:clamp(185px,calc(100vh - 478px),380px)}
   .hero p.lead{font-size:clamp(18px,min(2.1vw,3.5vh),24px)}
   .show-label{font-size:clamp(16px,2.8vh,20px)!important;padding:min(10px,1.4vh) 22px!important}
   .hero .listen-cta .btn{font-size:clamp(16px,2.8vh,19px)!important;padding:min(14px,2vh) 30px!important}
@@ -650,6 +650,10 @@ section.hero{padding:0}
 .pl-panel .track.playing .play,.pl-panel .track:hover .play{box-shadow:0 0 0 2px var(--navy),0 3px 8px rgba(0,0,0,.3)}
 .pl-panel .track.playing .play{background:var(--navy)!important;color:var(--gold-2)!important}
 .hero::before{background:radial-gradient(ellipse at center,rgba(19,33,74,.55) 0%,rgba(19,33,74,.82) 70%,rgba(19,33,74,.95) 100%)!important}
+/* title artwork (11/09) */
+.hero h1.title-art{margin:0 auto min(10px,1.2vh);line-height:0;font-size:0}
+.title-art img{display:block;margin:0 auto;height:clamp(110px,24vh,240px);width:auto;max-width:92vw;object-fit:contain;filter:drop-shadow(0 6px 18px rgba(0,0,0,.45))}
+@media (max-width:600px){.title-art img{height:auto;width:92vw}}
 </style>
 </head>
 <body>
@@ -673,8 +677,7 @@ section.hero{padding:0}
 
 <section class="hero">
   <div class="wrap">
-    <h1><span class="h1-sing">Sing</span> <em>Divine Will</em> Rounds</h1>
-    <div class="hero-flourish"><span class="fl-line"></span><svg class="lily" viewBox="0 0 120 50" aria-hidden="true"><g fill="#fff" stroke="#e8c66a" stroke-width="1.2"><path d="M60 40 C50 30 44 14 52 4 C56 16 60 26 60 40Z"/><path d="M60 40 C70 30 76 14 68 4 C64 16 60 26 60 40Z"/><path d="M60 40 C46 36 32 30 26 18 C40 22 52 30 60 40Z"/><path d="M60 40 C74 36 88 30 94 18 C80 22 68 30 60 40Z"/><path d="M40 44 C32 38 22 36 14 38 C24 42 32 46 40 44Z"/><path d="M80 44 C88 38 98 36 106 38 C96 42 88 46 80 44Z"/></g><circle cx="60" cy="38" r="3" fill="#e8c66a"/></svg><span class="fl-line r"></span></div>
+    <h1 class="title-art"><img src="images/title-art.png" alt="Sing Divine Will Rounds" width="1400" height="477"></h1>
     <p class="lead">Sung prayers to join Jesus in the Rounds of the Divine Will, inspired by the <em>Book of Heaven</em> of Luisa Piccarreta.</p>
     <div class="showcase">
       <a class="show-group" href="#cds">
