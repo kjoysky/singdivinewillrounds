@@ -571,7 +571,7 @@ section.hero{padding:0}
 }
 @media (min-width:861px){
   /* first screen */
-  .showcase{--ph:clamp(185px,calc(100vh - 478px),380px)}
+  .showcase{--ph:clamp(170px,calc(100vh - 512px),380px)}
   .hero p.lead{font-size:clamp(18px,min(2.1vw,3.5vh),24px)}
   .show-label{font-size:clamp(16px,2.8vh,20px)!important;padding:min(10px,1.4vh) 22px!important}
   .hero .listen-cta .btn{font-size:clamp(16px,2.8vh,19px)!important;padding:min(14px,2vh) 30px!important}
@@ -654,7 +654,45 @@ section.hero{padding:0}
 .hero h1.title-art{margin:0 auto min(10px,1.2vh);line-height:0;font-size:0}
 .title-art img{display:block;margin:0 auto;height:clamp(110px,24vh,240px);width:auto;max-width:92vw;object-fit:contain;filter:drop-shadow(0 6px 18px rgba(0,0,0,.45))}
 @media (max-width:600px){.title-art img{height:auto;width:92vw}}
+/* her image buttons + cream bar (11/09) */
+.img-link{display:inline-block;line-height:0;transition:transform .15s,filter .15s}
+.img-link:hover,.show-group:hover .show-btn{transform:translateY(-2px);filter:brightness(1.06) drop-shadow(0 6px 14px rgba(201,160,70,.45))}
+.img-btn{display:block;width:100%;height:auto}
+.show-btn{display:block;height:clamp(44px,7.4vh,66px);width:auto;margin-top:min(12px,1.6vh);transition:transform .15s,filter .15s}
+.showcase{background:none!important;box-shadow:none!important;border-radius:0!important;border-style:solid!important;border-width:28px!important;border-image:url(images/btn/cream-bar.png) 170 fill / 28px stretch!important;padding:min(4px,.6vh) 0 0!important;filter:drop-shadow(0 16px 30px rgba(0,0,0,.45))}
+.show-group+.show-group::after{background:#f8ecd6}
+.cds-sec .cd .img-link{width:100%;max-width:300px}
+.pl-price{margin:16px 0 0;font-family:Georgia,serif;font-size:28px;font-weight:700;color:#fff}
+.pl-price small{font-size:20px;font-weight:400;color:#f6ecd3}
+.pl-order-img{display:block;width:100%;max-width:380px;margin:10px auto 0}
+.big-order-img{width:min(440px,90%)}
+.closing-btn{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:16px}
+.closing-img{width:260px}
+@media (max-width:600px){
+  .showcase{border-width:24px!important;border-image-width:24px!important;padding:0!important;--ph:min(300px,60vw)!important;max-width:100%}
+  .show-group .covers img{width:calc(50vw - 70px)!important}
+  .show-group{padding:0 6px!important}
+  .show-btn{height:60px;margin-top:12px}
+  .show-group+.show-group::after{background:#f8ecd6}
+  .closing-img{width:240px}
+}
+/* fill wide screens (11/09) */
+@media (min-width:1300px){
+  main>section:not(.hero),footer,.topbar{zoom:var(--z,1)}
+}
+@media (min-width:1300px){
+  .showcase{--ph:clamp(195px,calc(100vh - 520px - 6vw),46vw)!important}
+  .hero .wrap{padding-top:calc(66px * var(--z,1))!important}
+  .title-art img{height:clamp(110px,22vh,300px)}
+  .hero p.lead{font-size:clamp(18px,min(1.5vw,3vh),30px);max-width:62vw}
+  .show-btn{height:clamp(44px,7.4vh,92px)}
+  .hero .listen-cta .btn{font-size:clamp(16px,2.4vh,24px)!important}
+  .hero-badge img{height:clamp(48px,6.4vh,70px)}
+}
 </style>
+<script>
+(function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
+</script>
 </head>
 <body>
 
@@ -685,14 +723,14 @@ section.hero{padding:0}
           <img src="images/cover-1.jpg" alt="Sing Divine Will Rounds Playlist 1 CD cover">
           <img src="images/cover-2.jpg" alt="Sing Divine Will Rounds Playlist 2 CD cover">
         </div>
-        <span class="show-label">The CDs</span>
+        <img class="show-btn" src="images/btn/the-cds.png" alt="The CDs" width="760" height="253">
       </a>
       <a class="show-group" href="#app">
         <div class="phones">
           <span class="phone"><img src="images/app/1-home.jpg" alt="The Sing Rounds app home screen"></span>
           <span class="phone"><img src="images/app/3-nowplaying.jpg" alt="The Sing Rounds app playing a song"></span>
         </div>
-        <span class="show-label"><span class="hero-app-new">NEW</span> <span class="lbl-the">The&nbsp;</span>iPhone App &darr;</span>
+        <img class="show-btn" src="images/btn/iphone-app.png" alt="Sing Rounds iPhone App" width="760" height="253">
       </a>
     </div>
     <div class="ctas listen-cta"><a class="btn" href="#playlist-1"><span aria-hidden="true" style="display:inline-block;width:0;height:0;border-top:.38em solid transparent;border-bottom:.38em solid transparent;border-left:.62em solid currentColor;margin-right:.6em;vertical-align:-.05em"></span>Listen to Playlists</a><a class="hero-badge" href="https://apps.apple.com/us/app/sing-divine-will-rounds/id6831215446" target="_blank" rel="noopener"><img src="images/app-store-badge.svg" alt="Download the Sing Divine Will Rounds app on the App Store"></a></div>
@@ -715,7 +753,7 @@ section.hero{padding:0}
         <div class="meta">12 songs &middot; 57 minutes</div>
         <div class="cd-div" aria-hidden="true"><span></span><i>&#10022;</i><span></span></div>
         <div class="price">$15 <small>+ shipping</small></div>
-        <a class="btn btn-gold" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener">Order CD 1</a>
+        <a class="img-link" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener"><img class="img-btn" src="images/btn/order-playlist-1.png" alt="Order Playlist 1" width="760" height="253"></a>
       </div>
       <div class="cd">
         <img src="images/playlist-2-cd.jpg" alt="Playlist 2 CD in its case">
@@ -723,7 +761,7 @@ section.hero{padding:0}
         <div class="meta">11 songs &middot; 55 minutes</div>
         <div class="cd-div" aria-hidden="true"><span></span><i>&#10022;</i><span></span></div>
         <div class="price">$15 <small>+ shipping</small></div>
-        <a class="btn btn-gold" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener">Order CD 2</a>
+        <a class="img-link" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener"><img class="img-btn" src="images/btn/order-playlist-2.png" alt="Order Playlist 2" width="760" height="253"></a>
       </div>
       <div class="cd cd-app">
         <span class="phone"><img src="images/app/1-home.jpg" alt="The Sing Rounds app home screen on iPhone"></span>
@@ -731,7 +769,7 @@ section.hero{padding:0}
         <div class="meta">First 5 songs free</div>
         <div class="cd-div" aria-hidden="true"><span></span><i>&#10022;</i><span></span></div>
         <div class="price">$14.99 <small>/ year</small></div>
-        <a class="btn btn-gold" href="#app">Explore the App</a>
+        <a class="img-link" href="#app"><img class="img-btn" src="images/btn/explore-the-app.png" alt="Explore the App" width="760" height="253"></a>
       </div>
     </div>
     <div class="cd-once"><span></span><p>Order one or both CDs &mdash; pay shipping only once. <a href="#order">See the easy steps&nbsp;&darr;</a></p><span></span></div>
@@ -786,7 +824,7 @@ section.hero{padding:0}
       </div>
     </div>
     <div class="order-cta">
-      <a class="btn btn-gold big-order" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener">Go to the Order Page</a>
+      <a class="img-link big-order-img" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener"><img class="img-btn" src="images/btn/go-to-order-page.png" alt="Go to the Order Page" width="760" height="253"></a>
       <p class="tip">The order page opens in a new tab so you can keep these directions handy.<br>
       Need help? Email <a href="mailto:kjoysky31@gmail.com">kjoysky31@gmail.com</a></p>
     </div>
@@ -821,7 +859,8 @@ section.hero{padding:0}
       <div class="pl-side">
         <img src="images/playlist-1-open.jpg" alt="Playlist 1 CD case opened, showing the disc and inside artwork">
         <p class="preview-note">Each song sample is just a short part of the song.</p>
-        <a class="btn btn-gold pl-order" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener">Order Playlist 1 &mdash; $15</a>
+        <p class="pl-price">$15 <small>+ shipping</small></p>
+        <a class="img-link pl-order-img" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener"><img class="img-btn" src="images/btn/order-playlist-1.png" alt="Order Playlist 1, $15" width="760" height="253"></a>
         <a class="pl-how" href="#order">How to Order &rarr;</a>
         <p class="pc-tip"><svg viewBox="0 0 48 34" aria-hidden="true"><rect x="8" y="3" width="32" height="21" rx="2" fill="none" stroke="#e8c66a" stroke-width="3"/><path d="M2 28h44l-3 4H5z" fill="#e8c66a"/></svg> Ordering is easiest on a computer.</p>
       </div>
@@ -856,7 +895,8 @@ section.hero{padding:0}
       <div class="pl-side">
         <img src="images/playlist-2-open.jpg" alt="Playlist 2 CD case opened, showing the disc and inside artwork">
         <p class="preview-note">Each song sample is just a short part of the song.</p>
-        <a class="btn btn-gold pl-order" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener">Order Playlist 2 &mdash; $15</a>
+        <p class="pl-price">$15 <small>+ shipping</small></p>
+        <a class="img-link pl-order-img" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener"><img class="img-btn" src="images/btn/order-playlist-2.png" alt="Order Playlist 2, $15" width="760" height="253"></a>
         <a class="pl-how" href="#order">How to Order &rarr;</a>
         <p class="pc-tip"><svg viewBox="0 0 48 34" aria-hidden="true"><rect x="8" y="3" width="32" height="21" rx="2" fill="none" stroke="#e8c66a" stroke-width="3"/><path d="M2 28h44l-3 4H5z" fill="#e8c66a"/></svg> Ordering is easiest on a computer.</p>
       </div>
@@ -911,7 +951,7 @@ section.hero{padding:0}
       <p>I would not be content if, in all created things, in which my Will has first place, I did not hear the voice of my little newborn who, rendering the whole Creation speaking, gives Me love for love, glory and adoration for each thing created by Me.&rdquo;</p>
       <cite>Servant of God Luisa Piccarreta, <em>Book of Heaven</em>, Vol. 19, March 14, 1926</cite>
     </blockquote>
-    <div class="closing-btn"><a class="btn btn-gold" href="about.html">About the Songs</a> <a class="btn btn-gold" href="rounds.html">What Are Rounds?</a></div>
+    <div class="closing-btn"><a class="img-link closing-img" href="about.html"><img class="img-btn" src="images/btn/about-the-songs.png" alt="About the Songs" width="760" height="253"></a> <a class="btn btn-gold" href="rounds.html">What Are Rounds?</a></div>
     <div class="share">
       <p>Know someone who would love these songs?</p>
       <button type="button" class="btn btn-ghost" id="shareBtn" data-url="https://singdivinewillrounds.com/" data-title="Sing Divine Will Rounds">Share This Page</button>
