@@ -641,6 +641,15 @@ section.hero{padding:0}
   .pl-how{margin:6px 0 0}
   .pl-side .pc-tip{margin:6px auto 0}
 }
+/* hover contrast + original blue hero (11/09) */
+.pl-panel .track{transition:background .15s,color .15s}
+.pl-panel .track:hover{background:#fbf5e6!important;box-shadow:none}
+.pl-panel .track:hover .title,.pl-panel .track:hover .num,.pl-panel .track:hover .time{color:var(--navy)!important}
+.pl-panel .track.playing{background:linear-gradient(90deg,#f6dc95,#fbeab8)!important;box-shadow:inset 0 0 0 2px var(--gold)!important}
+.pl-panel .track.playing .title,.pl-panel .track.playing .num,.pl-panel .track.playing .time{color:var(--navy)!important}
+.pl-panel .track.playing .play,.pl-panel .track:hover .play{box-shadow:0 0 0 2px var(--navy),0 3px 8px rgba(0,0,0,.3)}
+.pl-panel .track.playing .play{background:var(--navy)!important;color:var(--gold-2)!important}
+.hero::before{background:radial-gradient(ellipse at center,rgba(19,33,74,.55) 0%,rgba(19,33,74,.82) 70%,rgba(19,33,74,.95) 100%)!important}
 </style>
 </head>
 <body>
