@@ -719,6 +719,14 @@ section.hero{padding:0}
   .show-btn,.col-cta{height:60px!important}
   .col-cta .btn{font-size:17px!important}
 }
+/* smaller image buttons; CD cases in hero (11/09) */
+.cds-sec .cd .img-link{max-width:210px!important}
+.pl-order-img{max-width:270px!important}
+.big-order-img{width:min(320px,80%)!important}
+.closing-img{width:220px!important}
+.show-group .covers img{transform:none!important;border-radius:4px!important;width:calc(var(--ph)*.9)}
+.show-group .covers img+img{transform:none!important}
+@media (max-width:600px){.cds-sec .cd .img-link{max-width:230px!important}}
 </style>
 <script>
 (function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
@@ -751,8 +759,8 @@ section.hero{padding:0}
     <div class="showcase">
       <div class="show-col"><a class="show-group" href="#cds">
         <div class="covers">
-          <img src="images/cover-1.jpg" alt="Sing Divine Will Rounds Playlist 1 CD cover">
-          <img src="images/cover-2.jpg" alt="Sing Divine Will Rounds Playlist 2 CD cover">
+          <img src="images/playlist-1-cd.jpg" alt="Playlist 1 CD in its case">
+          <img src="images/playlist-2-cd.jpg" alt="Playlist 2 CD in its case">
         </div>
         <img class="show-btn" src="images/btn/the-cds.png" alt="The CDs" width="760" height="253">
       </a><div class="col-cta"><a class="btn" href="#playlist-1"><span aria-hidden="true" style="display:inline-block;width:0;height:0;border-top:.38em solid transparent;border-bottom:.38em solid transparent;border-left:.62em solid currentColor;margin-right:.6em;vertical-align:-.05em"></span>Listen to Playlists</a></div></div>
