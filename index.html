@@ -409,6 +409,42 @@ section.hero{padding:0}
   .hero .wrap{padding-top:118px}
   .showcase{--ph:clamp(95px,min(calc(100vh - 500px),36vw),210px)}
 }
+/* CDs & App section from her mockup (11/09) */
+.cds-sec{position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 0%,#fffaf0 0%,#f8efd9 70%,#f3e6c6 100%)}
+.cds-lily{position:absolute;top:18px;width:clamp(100px,12vw,170px);opacity:.95;pointer-events:none}
+.cds-lily svg{width:100%;height:auto;filter:drop-shadow(0 4px 8px rgba(150,110,40,.25))}
+.cds-lily.l{left:16px;transform:rotate(-12deg)}
+.cds-lily.r{right:16px;transform:rotate(12deg)}
+@media (max-width:700px){.cds-lily{display:none}}
+.cds-sec .section-head h2{color:var(--navy)}
+.cds-sec .section-head p{max-width:900px;color:var(--ink);font-size:17px}
+.cds-sec .cds{max-width:1000px;margin:0 auto;gap:22px}
+.cds-sec .cd{background:linear-gradient(180deg,#fffdf7,#fbf3e1);border:1.5px solid #ead29a;border-radius:18px;padding:22px 22px 24px;box-shadow:0 10px 30px rgba(150,110,40,.15);display:flex;flex-direction:column;align-items:center}
+.cds-sec .cd img{margin-bottom:14px;border-radius:6px}
+.cds-sec .cd-app .phone{--ph:clamp(200px,22vw,250px);margin:0 auto 14px}
+.cds-sec .cd h3{font-size:26px;color:var(--navy);margin:auto 0 2px}
+.cds-sec .cd .meta{color:var(--ink);font-size:18px;margin:0}
+.cd-div{display:flex;align-items:center;gap:8px;width:80%;margin:10px auto 6px;color:var(--gold)}
+.cd-div span{flex:1;height:1.5px;background:var(--gold)}
+.cd-div i{font-style:normal;font-size:15px;line-height:1}
+.cds-sec .cd .price{font-family:Georgia,serif;font-size:28px;margin:0 0 12px}
+.cds-sec .cd .price small{font-size:22px;color:var(--navy);font-weight:400}
+.cds-sec .cd .btn{margin-top:0;width:100%;max-width:280px;font-size:18px;padding:13px 18px;border:2.5px solid var(--navy)}
+.cd-once{display:flex;align-items:center;gap:18px;max-width:900px;margin:26px auto 0}
+.cd-once span{flex:1;height:1.5px;background:linear-gradient(90deg,transparent,var(--gold))}
+.cd-once span:last-child{background:linear-gradient(90deg,var(--gold),transparent)}
+.cd-once p{margin:0;text-align:center;font-size:19px;color:var(--ink)}
+.cd-once a{color:var(--navy);font-weight:700;white-space:nowrap}
+.order-tips{display:flex;align-items:center;gap:18px;max-width:860px;margin:18px auto 0;padding:14px 26px;background:linear-gradient(180deg,#fbeab8,#f6dc95);border:1.5px solid var(--gold);border-radius:14px}
+.tip-icon{width:52px;flex:none}
+.tip-bar{width:1.5px;align-self:stretch;background:var(--gold);flex:none}
+.tip-head{font-family:Cinzel,Georgia,serif;font-size:19px;color:var(--navy);white-space:nowrap}
+.order-tips p{margin:0;font-size:17px;line-height:1.45;color:var(--ink)}
+.lyrics-line{text-align:center;margin:20px 0 0;font-size:20px;color:var(--ink)}
+.lyrics-line .book{width:44px;vertical-align:-8px;margin-right:8px}
+.lyrics-line a{color:var(--navy);font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+@media (max-width:860px){.cds-sec .cd{max-width:420px;margin:0 auto;width:100%}}
+@media (max-width:600px){.order-tips{flex-wrap:wrap;padding:14px 16px;gap:10px}.tip-bar{display:none}.tip-icon{width:40px}.cd-once span{display:none}}
 </style>
 </head>
 <body>
@@ -455,51 +491,51 @@ section.hero{padding:0}
 </section>
 
 
-<section id="cds">
+<section id="cds" class="cds-sec">
+  <div class="cds-lily l"><svg viewBox="0 0 120 50" aria-hidden="true"><g fill="#fff" stroke="#d9b45a" stroke-width="1.2"><path d="M60 40 C50 30 44 14 52 4 C56 16 60 26 60 40Z"/><path d="M60 40 C70 30 76 14 68 4 C64 16 60 26 60 40Z"/><path d="M60 40 C46 36 32 30 26 18 C40 22 52 30 60 40Z"/><path d="M60 40 C74 36 88 30 94 18 C80 22 68 30 60 40Z"/></g><g fill="#9bb07a"><path d="M40 44 C32 38 22 36 10 38 C22 42 32 46 40 44Z"/><path d="M80 44 C88 38 98 36 110 38 C98 42 88 46 80 44Z"/></g><circle cx="60" cy="38" r="3" fill="#e8c66a"/></svg></div><div class="cds-lily r"><svg viewBox="0 0 120 50" aria-hidden="true"><g fill="#fff" stroke="#d9b45a" stroke-width="1.2"><path d="M60 40 C50 30 44 14 52 4 C56 16 60 26 60 40Z"/><path d="M60 40 C70 30 76 14 68 4 C64 16 60 26 60 40Z"/><path d="M60 40 C46 36 32 30 26 18 C40 22 52 30 60 40Z"/><path d="M60 40 C74 36 88 30 94 18 C80 22 68 30 60 40Z"/></g><g fill="#9bb07a"><path d="M40 44 C32 38 22 36 10 38 C22 42 32 46 40 44Z"/><path d="M80 44 C88 38 98 36 110 38 C98 42 88 46 80 44Z"/></g><circle cx="60" cy="38" r="3" fill="#e8c66a"/></svg></div>
   <div class="wrap">
     <div class="section-head">
       <div class="ornament"><span>&#10022;</span></div>
       <h2>The CDs &amp; the App</h2>
-      <p>Two albums of round songs to sing, pray, and offer with Jesus for every soul. Each CD comes in a jewel case with full-color artwork. Or keep every song on your iPhone with the Sing Rounds app.</p>
+      <p>Two albums of round songs to sing, pray, and offer with Jesus for every soul.<br>Each CD comes in a jewel case with full-color artwork. Or keep every song on your iPhone with the Sing Rounds app.</p>
     </div>
     <div class="cds">
       <div class="cd">
         <img src="images/playlist-1-cd.jpg" alt="Playlist 1 CD in its case">
         <h3>Playlist 1</h3>
         <div class="meta">12 songs &middot; 57 minutes</div>
-        <div class="price">$15 <small>plus shipping</small></div>
-        <a class="btn btn-navy" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener">Order Playlist 1</a>
-        <a class="listen" href="#playlist-1">See the songs &amp; hear samples &darr;</a>
+        <div class="cd-div" aria-hidden="true"><span></span><i>&#10022;</i><span></span></div>
+        <div class="price">$15 <small>+ shipping</small></div>
+        <a class="btn btn-gold" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener">Order CD 1</a>
       </div>
       <div class="cd">
         <img src="images/playlist-2-cd.jpg" alt="Playlist 2 CD in its case">
         <h3>Playlist 2</h3>
         <div class="meta">11 songs &middot; 55 minutes</div>
-        <div class="price">$15 <small>plus shipping</small></div>
-        <a class="btn btn-navy" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener">Order Playlist 2</a>
-        <a class="listen" href="#playlist-2">See the songs &amp; hear samples &darr;</a>
+        <div class="cd-div" aria-hidden="true"><span></span><i>&#10022;</i><span></span></div>
+        <div class="price">$15 <small>+ shipping</small></div>
+        <a class="btn btn-gold" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener">Order CD 2</a>
       </div>
       <div class="cd cd-app">
-        <img class="app-shot" src="images/app/1-home.jpg" alt="The Sing Rounds app home screen on iPhone">
-        <h3>The App</h3>
-        <div class="meta">For iPhone &middot; first 5 songs free</div>
-        <div class="price">$14.99 <small>a year</small></div>
-        <a class="btn btn-navy" href="#app">Learn about the App</a>
-        <a class="listen" href="https://apps.apple.com/us/app/sing-divine-will-rounds/id6831215446" target="_blank" rel="noopener">Get it on the App Store &rarr;</a>
+        <span class="phone"><img src="images/app/1-home.jpg" alt="The Sing Rounds app home screen on iPhone"></span>
+        <h3>The iPhone App</h3>
+        <div class="meta">First 5 songs free</div>
+        <div class="cd-div" aria-hidden="true"><span></span><i>&#10022;</i><span></span></div>
+        <div class="price">$14.99 <small>/ year</small></div>
+        <a class="btn btn-gold" href="#app">Explore the App</a>
       </div>
     </div>
-    <div class="device-tip">
-      <span class="device-icon" aria-hidden="true">&#128187;</span>
-      <div><strong>Please order on a computer if you can.</strong> The order page is very hard to use on a phone.
-      If you only have a phone, <strong>turn your phone sideways</strong> before you start.</div>
+    <div class="cd-once"><span></span><p>Order one or both CDs &mdash; pay shipping only once. <a href="#order">See the easy steps&nbsp;&darr;</a></p><span></span></div>
+    <div class="order-tips">
+      <svg class="tip-icon" viewBox="0 0 48 34" aria-hidden="true"><rect x="8" y="3" width="32" height="21" rx="2" fill="none" stroke="#13214a" stroke-width="3"/><path d="M2 28h44l-3 4H5z" fill="#13214a"/></svg>
+      <span class="tip-bar" aria-hidden="true"></span>
+      <strong class="tip-head">Ordering Tips:</strong>
+      <p>It&rsquo;s easiest to order on a computer. If you are using a phone, turn it <strong>sideways</strong> (landscape) before you start.</p>
     </div>
-    <p class="both">Both CDs are on the same order page, so you can get one or both and pay shipping once.<br>
-      <a href="#order"><strong>See the easy step-by-step directions &darr;</strong></a></p>
-    <div class="lyrics-card">
-      <h3>Sing Along with the Lyrics</h3>
-      <p>Download the words to every song as a free PDF to read along or print at home.</p>
-      <a class="btn btn-gold" href="lyrics/Sing-Divine-Will-Rounds-Lyrics.pdf" target="_blank" rel="noopener">Download the Lyrics (PDF)</a>
-    </div>
+    <p class="lyrics-line">
+      <svg class="book" viewBox="0 0 48 30" aria-hidden="true"><path d="M24 6C18 2 9 2 3 4v22c6-2 15-2 21 2 6-4 15-4 21-2V4c-6-2-15-2-21 2z" fill="#fbf0d0" stroke="#c9a046" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 6v22" stroke="#c9a046" stroke-width="2.4"/></svg>
+      Want to sing along? <a href="lyrics/Sing-Divine-Will-Rounds-Lyrics.pdf" target="_blank" rel="noopener">Download the free lyrics (PDF) &rarr;</a>
+    </p>
   </div>
 </section>
 
