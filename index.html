@@ -740,6 +740,18 @@ section.hero{padding:0}
 .pill-clip{clip-path:inset(6.5% 1.3% 8.2% 1.3% round 999px)}
 .app-story{text-align:center!important;border:1.5px solid var(--gold)!important;border-radius:14px!important}
 .track .title,.pl-panel .track .title,.track.playing .title{font-weight:400!important}
+/* App Store row from her mockup (11/09) */
+.heart-divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:6px auto 22px;max-width:520px;color:var(--gold)}
+.heart-divider span{flex:1;height:1.5px;background:var(--gold)}
+.heart-divider svg{width:30px;height:28px}
+.app-cta{display:flex!important;align-items:center;justify-content:center;gap:26px;flex-wrap:wrap}
+.app-cta .app-search{margin:0!important;padding-left:26px;border-left:1.5px solid var(--gold);text-align:left;font-size:22px!important;line-height:1.3;color:var(--navy)}
+.app-cta .app-search strong{font-size:27px;color:var(--navy)}
+.tap-hint{display:flex;align-items:center;justify-content:center;gap:12px;margin:14px auto 20px!important;max-width:560px;padding:8px 22px;font-family:Georgia,serif;font-weight:700;font-size:22px;color:#6b4a12;background:linear-gradient(90deg,transparent,rgba(240,214,150,.45) 12%,rgba(240,214,150,.45) 88%,transparent)}
+.tap-hint svg{width:42px;height:36px;flex:none;color:var(--gold);transform:translateY(-12px)}
+@media (max-width:600px){.app-cta{flex-direction:column;gap:14px}.app-cta .app-search{border-left:0;padding-left:0;text-align:center;font-size:19px!important}.app-cta .app-search strong{font-size:22px}.tap-hint{font-size:18px}.tap-hint svg{transform:rotate(40deg) translateY(-6px)}}
+.app-cta .app-search{white-space:nowrap}.app-cta .app-badge img{height:64px!important;width:auto}
+@media (max-width:600px){.app-cta .app-search{white-space:normal}.tap-hint svg{display:none}.tap-hint{font-size:17px;padding:8px 10px;text-align:center}}
 </style>
 <script>
 (function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
@@ -947,11 +959,12 @@ section.hero{padding:0}
     <div class="free-frame" style="max-width:800px;margin:0 auto"><div class="free-box">
       <div style="text-align:center"><span class="app-soon">&#10022; Now on the App Store &#10022;</span></div>
       <h2>The Sing Rounds App for iPhone</h2>
-      <div class="free-divider" aria-hidden="true"><span></span></div>
+      <div class="heart-divider" aria-hidden="true"><span></span><svg viewBox="0 0 24 22"><path d="M12 20 C5 14 2 11 2 7 A5 5 0 0 1 12 5 A5 5 0 0 1 22 7 C22 11 19 14 12 20Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg><span></span></div>
       <div class="app-cta">
         <a class="app-badge" href="https://apps.apple.com/us/app/sing-divine-will-rounds/id6831215446" target="_blank" rel="noopener"><img src="images/app-store-badge.svg" alt="Download on the App Store"></a>
-        <p>Search the App Store for <strong>Sing Divine Will Rounds</strong></p>
+        <p class="app-search">Or search the App Store for<br><strong>Sing Divine Will Rounds</strong></p>
       </div>
+      <p class="tap-hint"><svg viewBox="0 0 60 50" aria-hidden="true"><path d="M54 40 C30 44 12 34 10 8" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M1 16 L10 3 L19 16" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tap the button to download the app!</span></p>
       <p class="app-shots-tip">A look inside the app</p>
       <div class="app-shots"><span class="phone"><img src="images/app/0-welcome.jpg" alt="Welcome screen" loading="lazy"></span><span class="phone"><img src="images/app/1-home.jpg" alt="Library with all playlists" loading="lazy"></span><span class="phone"><img src="images/app/2-playlist.jpg" alt="A playlist page" loading="lazy"></span><span class="phone"><img src="images/app/3-nowplaying.jpg" alt="Now Playing with the song painting" loading="lazy"></span><span class="phone"><img src="images/app/4-lyrics.jpg" alt="Big, easy-to-read lyrics" loading="lazy"></span><span class="phone"><img src="images/app/5-about.jpg" alt="About the Rounds" loading="lazy"></span><span class="phone"><img src="images/app/6-favorites.jpg" alt="Your Favorites" loading="lazy"></span></div>
       <p class="app-note" style="margin-bottom:26px">The first 5 songs are free in the app. The full library is $14.99 a year or $2.99 a month.</p>
