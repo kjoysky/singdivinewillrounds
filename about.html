@@ -328,6 +328,20 @@ footer{padding:30px 0}
 .about-badge{margin-top:22px}
 .about-badge p{margin:0 0 10px;font-size:19px;color:#f6ecd3}
 .about-badge img{height:58px;width:auto;display:inline-block}
+/* iPhone: big Menu button + big links (11/09) */
+.menu-btn{display:none}
+@media (max-width:600px){
+  .topbar{padding:10px 0}
+  .topbar .brand{display:none}
+  .menu-btn{display:block;margin:0 auto;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:18px;letter-spacing:.06em;color:var(--navy);background:linear-gradient(180deg,var(--gold-2),var(--gold));border:2.5px solid var(--navy);border-radius:999px;padding:9px 26px;min-height:46px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+  .nav{display:none}
+  .nav.open{display:block;position:absolute;left:12px;right:12px;top:64px;background:#13214a;border:2px solid var(--gold-2);border-radius:16px;padding:8px 0;box-shadow:0 18px 40px rgba(0,0,0,.55);z-index:20}
+  .nav.open a{display:block!important;margin:0!important;padding:13px 20px!important;font-size:19px!important;color:#fff!important;background:none!important;border:0!important;border-radius:0!important;text-shadow:none!important;text-align:center;border-bottom:1px solid rgba(232,198,106,.25)!important}
+  .nav.open a:last-child{border-bottom:0!important}
+  .nav.open a.on{color:var(--gold-2)!important}
+}
+@media (max-width:600px){.topbar .wrap{flex-direction:column}}
+@media (max-width:600px){footer .copy{font-size:15px}footer .links a{display:inline-block;padding:10px 6px;font-size:18px}footer .contact{font-size:17px}.page-banner .back,.hero .back{display:inline-block;padding:10px 0;font-size:18px}}
 </style>
 </head>
 <body>
@@ -335,7 +349,8 @@ footer{padding:30px 0}
 <header class="topbar">
   <div class="wrap">
     <a class="brand" href="index.html">SING DIVINE WILL ROUNDS</a>
-    <nav class="nav">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="sitenav">&#9776; Menu</button>
+    <nav class="nav" id="sitenav">
       <a href="index.html#cds">The CDs</a>
       <a href="index.html#playlist-1">Songs</a>
       <a href="index.html#app">The App</a>
@@ -433,6 +448,11 @@ footer{padding:30px 0}
     else{fallback();}
   });
 })();
+</script>
+<script>
+(function(){var b=document.querySelector('.menu-btn'),n=document.getElementById('sitenav');if(!b||!n)return;
+b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.innerHTML=o?'&#10005; Close':'&#9776; Menu';});
+n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');b.setAttribute('aria-expanded','false');b.innerHTML='&#9776; Menu';});});})();
 </script>
 </body>
 </html>
