@@ -352,6 +352,11 @@ footer{padding:30px 0}
 @media (max-width:860px){section{padding:36px 0}}
 section.hero{padding:0}
 .app-sec{padding-top:40px}
+/* app pictures: all visible, no slider (11/09) */
+.app-shots{--ph:250px;display:flex;flex-wrap:wrap;justify-content:center;gap:18px 16px;overflow:visible;padding:6px 0 10px;margin:6px 0 14px}
+.app-shots .phone img{height:var(--ph);border:0;scroll-snap-align:none}
+@media (max-width:600px){.app-shots{--ph:190px;gap:14px 10px}}
+@media (max-width:400px){.app-shots{--ph:165px}}
 </style>
 </head>
 <body>
@@ -575,8 +580,8 @@ section.hero{padding:0}
         <a class="app-badge" href="https://apps.apple.com/us/app/sing-divine-will-rounds/id6831215446" target="_blank" rel="noopener"><img src="images/app-store-badge.svg" alt="Download on the App Store"></a>
         <p>Search the App Store for <strong>Sing Divine Will Rounds</strong></p>
       </div>
-      <p class="app-shots-tip">A look inside the app (slide to see more)</p>
-      <div class="app-shots"><img src="images/app/0-welcome.jpg" alt="Welcome screen" loading="lazy"><img src="images/app/1-home.jpg" alt="Library with all playlists" loading="lazy"><img src="images/app/2-playlist.jpg" alt="A playlist page" loading="lazy"><img src="images/app/3-nowplaying.jpg" alt="Now Playing with the song painting" loading="lazy"><img src="images/app/4-lyrics.jpg" alt="Big, easy-to-read lyrics" loading="lazy"><img src="images/app/5-about.jpg" alt="About the Rounds" loading="lazy"><img src="images/app/6-favorites.jpg" alt="Your Favorites" loading="lazy"></div>
+      <p class="app-shots-tip">A look inside the app</p>
+      <div class="app-shots"><span class="phone"><img src="images/app/0-welcome.jpg" alt="Welcome screen" loading="lazy"></span><span class="phone"><img src="images/app/1-home.jpg" alt="Library with all playlists" loading="lazy"></span><span class="phone"><img src="images/app/2-playlist.jpg" alt="A playlist page" loading="lazy"></span><span class="phone"><img src="images/app/3-nowplaying.jpg" alt="Now Playing with the song painting" loading="lazy"></span><span class="phone"><img src="images/app/4-lyrics.jpg" alt="Big, easy-to-read lyrics" loading="lazy"></span><span class="phone"><img src="images/app/5-about.jpg" alt="About the Rounds" loading="lazy"></span><span class="phone"><img src="images/app/6-favorites.jpg" alt="Your Favorites" loading="lazy"></span></div>
       <p class="app-note" style="margin-bottom:26px">The first 5 songs are free in the app. The full library is $14.99 a year or $2.99 a month.</p>
       <div class="app-story">
         <p>One day, a lady who had heard the songs asked if I would make an app so she could just &ldquo;press a button&rdquo; and play them. This app is the fruit of her request.</p>
