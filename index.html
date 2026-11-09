@@ -697,6 +697,28 @@ section.hero{padding:0}
 .show-group+.show-group::before{background:linear-gradient(180deg,transparent,var(--gold-2),transparent)!important}
 .show-group .covers img,.showcase .phone{box-shadow:0 14px 34px rgba(0,0,0,.6)!important}
 @media (max-width:600px){.show-group+.show-group::before{background:linear-gradient(90deg,transparent,var(--gold-2),transparent)!important}}
+/* two tidy columns, no lilies (11/09) */
+.hero-flourish{max-width:520px;gap:0}
+.showcase{align-items:stretch!important}
+.show-col{display:flex;flex-direction:column;align-items:center;align-self:stretch}
+.show-col .show-group{flex:1;justify-content:flex-end}
+.show-group .covers{flex:1;align-items:center}
+.show-col+.show-col{position:relative}
+.show-col+.show-col::before{content:"";position:absolute;left:0;top:4%;bottom:4%;width:1.5px;background:linear-gradient(180deg,transparent,var(--gold-2),transparent)}
+.show-group+.show-group::before,.show-group+.show-group::after{display:none!important}
+.show-group{padding:0 clamp(18px,3.4vw,46px)!important}
+.show-btn{height:clamp(48px,7.4vh,80px)!important;width:auto}
+.col-cta{margin-top:min(14px,1.8vh);height:clamp(48px,7.4vh,80px);display:flex;align-items:center;justify-content:center}
+.col-cta .btn{height:100%;display:inline-flex;align-items:center;padding:0 28px!important;font-size:clamp(15px,2.3vh,22px)!important;background:linear-gradient(180deg,var(--gold-2),var(--gold));color:var(--navy);border:2.5px solid var(--navy);box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.col-cta .hero-badge,.col-cta .hero-badge img{height:100%!important;width:auto}
+.col-cta .hero-badge{border-radius:14px}
+@media (max-width:600px){
+  .showcase{flex-direction:column}
+  .show-col+.show-col{margin-top:26px;padding-top:22px}
+  .show-col+.show-col::before{left:12%;right:12%;top:0;bottom:auto;width:auto;height:1.5px;background:linear-gradient(90deg,transparent,var(--gold-2),transparent)}
+  .show-btn,.col-cta{height:60px!important}
+  .col-cta .btn{font-size:17px!important}
+}
 </style>
 <script>
 (function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
@@ -724,31 +746,29 @@ section.hero{padding:0}
 <section class="hero">
   <div class="wrap">
     <h1><span class="h1-sing">Sing</span> <em>Divine Will</em> Rounds</h1>
-    <div class="hero-flourish"><span class="fl-line"></span><svg class="lily" viewBox="0 0 120 50" aria-hidden="true"><g fill="#fff" stroke="#e8c66a" stroke-width="1.2"><path d="M60 40 C50 30 44 14 52 4 C56 16 60 26 60 40Z"/><path d="M60 40 C70 30 76 14 68 4 C64 16 60 26 60 40Z"/><path d="M60 40 C46 36 32 30 26 18 C40 22 52 30 60 40Z"/><path d="M60 40 C74 36 88 30 94 18 C80 22 68 30 60 40Z"/><path d="M40 44 C32 38 22 36 14 38 C24 42 32 46 40 44Z"/><path d="M80 44 C88 38 98 36 106 38 C96 42 88 46 80 44Z"/></g><circle cx="60" cy="38" r="3" fill="#e8c66a"/></svg><span class="fl-line r"></span></div>
+    <div class="hero-flourish"><span class="fl-line"></span><span class="fl-line r"></span></div>
     <p class="lead">Sung prayers to join Jesus in the Rounds of the Divine Will, inspired by the <em>Book of Heaven</em> of Luisa Piccarreta.</p>
     <div class="showcase">
-      <a class="show-group" href="#cds">
+      <div class="show-col"><a class="show-group" href="#cds">
         <div class="covers">
           <img src="images/cover-1.jpg" alt="Sing Divine Will Rounds Playlist 1 CD cover">
           <img src="images/cover-2.jpg" alt="Sing Divine Will Rounds Playlist 2 CD cover">
         </div>
         <img class="show-btn" src="images/btn/the-cds.png" alt="The CDs" width="760" height="253">
-      </a>
-      <a class="show-group" href="#app">
+      </a><div class="col-cta"><a class="btn" href="#playlist-1"><span aria-hidden="true" style="display:inline-block;width:0;height:0;border-top:.38em solid transparent;border-bottom:.38em solid transparent;border-left:.62em solid currentColor;margin-right:.6em;vertical-align:-.05em"></span>Listen to Playlists</a></div></div>
+      <div class="show-col"><a class="show-group" href="#app">
         <div class="phones">
           <span class="phone"><img src="images/app/1-home.jpg" alt="The Sing Rounds app home screen"></span>
           <span class="phone"><img src="images/app/3-nowplaying.jpg" alt="The Sing Rounds app playing a song"></span>
         </div>
         <img class="show-btn" src="images/btn/iphone-app.png" alt="Sing Rounds iPhone App" width="760" height="253">
-      </a>
+      </a><div class="col-cta"><a class="hero-badge" href="https://apps.apple.com/us/app/sing-divine-will-rounds/id6831215446" target="_blank" rel="noopener"><img src="images/app-store-badge.svg" alt="Download the Sing Divine Will Rounds app on the App Store"></a></div></div>
     </div>
-    <div class="ctas listen-cta"><a class="btn" href="#playlist-1"><span aria-hidden="true" style="display:inline-block;width:0;height:0;border-top:.38em solid transparent;border-bottom:.38em solid transparent;border-left:.62em solid currentColor;margin-right:.6em;vertical-align:-.05em"></span>Listen to Playlists</a><a class="hero-badge" href="https://apps.apple.com/us/app/sing-divine-will-rounds/id6831215446" target="_blank" rel="noopener"><img src="images/app-store-badge.svg" alt="Download the Sing Divine Will Rounds app on the App Store"></a></div>
   </div>
 </section>
 
 
 <section id="cds" class="cds-sec">
-  <div class="cds-lily l"><svg viewBox="0 0 120 50" aria-hidden="true"><g fill="#fff" stroke="#d9b45a" stroke-width="1.2"><path d="M60 40 C50 30 44 14 52 4 C56 16 60 26 60 40Z"/><path d="M60 40 C70 30 76 14 68 4 C64 16 60 26 60 40Z"/><path d="M60 40 C46 36 32 30 26 18 C40 22 52 30 60 40Z"/><path d="M60 40 C74 36 88 30 94 18 C80 22 68 30 60 40Z"/></g><g fill="#9bb07a"><path d="M40 44 C32 38 22 36 10 38 C22 42 32 46 40 44Z"/><path d="M80 44 C88 38 98 36 110 38 C98 42 88 46 80 44Z"/></g><circle cx="60" cy="38" r="3" fill="#e8c66a"/></svg></div><div class="cds-lily r"><svg viewBox="0 0 120 50" aria-hidden="true"><g fill="#fff" stroke="#d9b45a" stroke-width="1.2"><path d="M60 40 C50 30 44 14 52 4 C56 16 60 26 60 40Z"/><path d="M60 40 C70 30 76 14 68 4 C64 16 60 26 60 40Z"/><path d="M60 40 C46 36 32 30 26 18 C40 22 52 30 60 40Z"/><path d="M60 40 C74 36 88 30 94 18 C80 22 68 30 60 40Z"/></g><g fill="#9bb07a"><path d="M40 44 C32 38 22 36 10 38 C22 42 32 46 40 44Z"/><path d="M80 44 C88 38 98 36 110 38 C98 42 88 46 80 44Z"/></g><circle cx="60" cy="38" r="3" fill="#e8c66a"/></svg></div>
   <div class="wrap">
     <div class="section-head">
       <div class="ornament"><span>&#10022;</span></div>
@@ -796,7 +816,6 @@ section.hero{padding:0}
 </section>
 
 <section id="order" class="cds-sec order-sec">
-  <div class="cds-lily l"><svg viewBox="0 0 120 50" aria-hidden="true"><g fill="#fff" stroke="#d9b45a" stroke-width="1.2"><path d="M60 40 C50 30 44 14 52 4 C56 16 60 26 60 40Z"/><path d="M60 40 C70 30 76 14 68 4 C64 16 60 26 60 40Z"/><path d="M60 40 C46 36 32 30 26 18 C40 22 52 30 60 40Z"/><path d="M60 40 C74 36 88 30 94 18 C80 22 68 30 60 40Z"/></g><g fill="#9bb07a"><path d="M40 44 C32 38 22 36 10 38 C22 42 32 46 40 44Z"/><path d="M80 44 C88 38 98 36 110 38 C98 42 88 46 80 44Z"/></g><circle cx="60" cy="38" r="3" fill="#e8c66a"/></svg></div><div class="cds-lily r"><svg viewBox="0 0 120 50" aria-hidden="true"><g fill="#fff" stroke="#d9b45a" stroke-width="1.2"><path d="M60 40 C50 30 44 14 52 4 C56 16 60 26 60 40Z"/><path d="M60 40 C70 30 76 14 68 4 C64 16 60 26 60 40Z"/><path d="M60 40 C46 36 32 30 26 18 C40 22 52 30 60 40Z"/><path d="M60 40 C74 36 88 30 94 18 C80 22 68 30 60 40Z"/></g><g fill="#9bb07a"><path d="M40 44 C32 38 22 36 10 38 C22 42 32 46 40 44Z"/><path d="M80 44 C88 38 98 36 110 38 C98 42 88 46 80 44Z"/></g><circle cx="60" cy="38" r="3" fill="#e8c66a"/></svg></div>
   <div class="wrap">
     <div class="section-head">
       <div class="ornament"><span>&#10022;</span></div>
