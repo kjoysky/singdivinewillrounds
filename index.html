@@ -689,6 +689,14 @@ section.hero{padding:0}
   .hero .listen-cta .btn{font-size:clamp(16px,2.4vh,24px)!important}
   .hero-badge img{height:clamp(48px,6.4vh,70px)}
 }
+/* original typed title back; no cream bar (11/09) */
+@media (min-width:1300px){.hero h1{font-size:clamp(30px,min(4.4vw,7vh),96px)}.lily{width:clamp(80px,12vh,150px)}}
+@media (max-width:600px){.hero h1{font-size:34px}}
+.showcase{border:0!important;border-image:none!important;background:none!important;filter:none!important;padding:0!important}
+.show-group+.show-group::after{background:none!important;color:var(--gold-2)}
+.show-group+.show-group::before{background:linear-gradient(180deg,transparent,var(--gold-2),transparent)!important}
+.show-group .covers img,.showcase .phone{box-shadow:0 14px 34px rgba(0,0,0,.6)!important}
+@media (max-width:600px){.show-group+.show-group::before{background:linear-gradient(90deg,transparent,var(--gold-2),transparent)!important}}
 </style>
 <script>
 (function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
@@ -715,7 +723,8 @@ section.hero{padding:0}
 
 <section class="hero">
   <div class="wrap">
-    <h1 class="title-art"><img src="images/title-art.png" alt="Sing Divine Will Rounds" width="1400" height="477"></h1>
+    <h1><span class="h1-sing">Sing</span> <em>Divine Will</em> Rounds</h1>
+    <div class="hero-flourish"><span class="fl-line"></span><svg class="lily" viewBox="0 0 120 50" aria-hidden="true"><g fill="#fff" stroke="#e8c66a" stroke-width="1.2"><path d="M60 40 C50 30 44 14 52 4 C56 16 60 26 60 40Z"/><path d="M60 40 C70 30 76 14 68 4 C64 16 60 26 60 40Z"/><path d="M60 40 C46 36 32 30 26 18 C40 22 52 30 60 40Z"/><path d="M60 40 C74 36 88 30 94 18 C80 22 68 30 60 40Z"/><path d="M40 44 C32 38 22 36 14 38 C24 42 32 46 40 44Z"/><path d="M80 44 C88 38 98 36 106 38 C96 42 88 46 80 44Z"/></g><circle cx="60" cy="38" r="3" fill="#e8c66a"/></svg><span class="fl-line r"></span></div>
     <p class="lead">Sung prayers to join Jesus in the Rounds of the Divine Will, inspired by the <em>Book of Heaven</em> of Luisa Piccarreta.</p>
     <div class="showcase">
       <a class="show-group" href="#cds">
