@@ -298,7 +298,7 @@ footer .contact{font-size:18px;margin:0 0 16px}
 .showcase{display:flex;justify-content:center;align-items:flex-end;gap:clamp(24px,5vw,70px);margin-top:24px}
 .show-group{display:flex;flex-direction:column;align-items:center;text-decoration:none;color:#fff}
 .show-group .covers,.show-group .phones{display:flex;align-items:flex-end;gap:16px}
-.show-group .covers img{width:calc(var(--ph)*.7);border-radius:6px;box-shadow:0 14px 34px rgba(0,0,0,.55);transform:rotate(-4deg)}
+.show-group .covers img{width:calc(var(--ph)*.8);border-radius:6px;box-shadow:0 14px 34px rgba(0,0,0,.55);transform:rotate(-4deg)}
 .show-group .covers img+img{transform:rotate(4deg)}
 .show-label{margin-top:16px;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:18px;letter-spacing:.06em;background:#fbf5e6;color:var(--navy);border:2px solid var(--gold-2);border-radius:999px;padding:8px 20px;position:relative;box-shadow:0 6px 18px rgba(0,0,0,.4)}
 .show-group:hover .show-label{background:#fff}
@@ -312,7 +312,7 @@ footer .contact{font-size:18px;margin:0 0 16px}
   .hero p.lead{margin-bottom:16px}
 }
 /* hero fits one screen (11/09) */
-.showcase{--ph:clamp(100px,calc(100vh - 505px),300px);margin-top:min(24px,2.6vh)}
+.showcase{--ph:clamp(120px,calc(100vh - 440px),360px);margin-top:min(24px,2.6vh)}
 .hero{min-height:100vh;min-height:100svh}
 .hero .wrap{padding-top:78px;padding-bottom:16px}
 .hero h1{font-size:clamp(26px,min(4.6vw,7vh),56px)}
@@ -326,7 +326,7 @@ footer .contact{font-size:18px;margin:0 0 16px}
 @media (max-width:1100px){.hero .wrap{padding-top:100px}}
 @media (max-width:600px){
   .hero .wrap{padding-top:124px}
-  .showcase{--ph:clamp(95px,calc(100vh - 545px),170px)}
+  .showcase{--ph:clamp(110px,calc(100vh - 480px),220px)}
   .phone{border-width:1.5px}
   .phone::before{right:-4px;width:2px}.phone::after{left:-4px;width:2px}
 }
@@ -367,6 +367,14 @@ section.hero{padding:0}
 /* first-screen buttons: all gold with navy outline (11/09) */
 .hero .ctas .btn,.show-label{background:linear-gradient(180deg,var(--gold-2),var(--gold));color:var(--navy);border:2.5px solid var(--navy);box-shadow:0 6px 18px rgba(0,0,0,.35)}
 .hero .ctas .btn:hover,.show-group:hover .show-label{background:linear-gradient(180deg,#f0d483,var(--gold-2))}
+.listen-cta{margin-top:min(18px,2.2vh)}
+.hero p.lead{margin-bottom:min(16px,2vh)}
+/* each group gets its own cream box; no big panel (11/09) */
+.show-group,.show-group .covers img,.show-group .phone{flex:none}
+.showcase{display:flex;background:none;border:0;box-shadow:none;padding:0;border-radius:0}
+.show-group .covers,.show-group .phones{background:rgba(251,245,230,.95);border:2px solid var(--gold-2);border-radius:16px;padding:min(14px,1.8vh) min(18px,2.2vw);box-shadow:0 14px 36px rgba(0,0,0,.55)}
+.show-group .covers{gap:min(18px,2vw)}
+@media (max-width:600px){.showcase{padding:0;gap:12px;--ph:clamp(100px,min(calc(100vh - 480px),36vw),210px)}.show-group .covers,.show-group .phones{padding:7px;border-radius:12px}.show-group .covers{gap:6px}.show-group .covers img{width:calc(var(--ph)*.56)}.show-label{padding:6px 9px;font-size:12px}.lbl-the{display:none}.hero-app-new{font-size:10px;padding:2px 6px;margin-right:3px}}
 </style>
 </head>
 <body>
@@ -391,10 +399,6 @@ section.hero{padding:0}
   <div class="wrap">
     <h1>Sing <em>Divine Will</em> Rounds</h1>
     <p class="lead">Sung prayers to join Jesus in the Rounds of the Divine Will, inspired by the <em>Book of Heaven</em> of Luisa Piccarreta.</p>
-    <div class="ctas">
-      <a class="btn btn-gold" href="#cds">Order the CDs: $15</a>
-      <a class="btn btn-ghost" href="#playlist-1"><span aria-hidden="true" style="display:inline-block;width:0;height:0;border-top:.38em solid transparent;border-bottom:.38em solid transparent;border-left:.62em solid currentColor;margin-right:.6em;vertical-align:-.05em"></span>Hear Song Samples</a>
-    </div>
     <div class="showcase">
       <a class="show-group" href="#cds">
         <div class="covers">
@@ -408,9 +412,10 @@ section.hero{padding:0}
           <span class="phone"><img src="images/app/1-home.jpg" alt="The Sing Rounds app home screen"></span>
           <span class="phone"><img src="images/app/3-nowplaying.jpg" alt="The Sing Rounds app playing a song"></span>
         </div>
-        <span class="show-label"><span class="hero-app-new">NEW</span> The iPhone App &darr;</span>
+        <span class="show-label"><span class="hero-app-new">NEW</span> <span class="lbl-the">The </span>iPhone App &darr;</span>
       </a>
     </div>
+    <div class="ctas listen-cta"><a class="btn" href="#playlist-1"><span aria-hidden="true" style="display:inline-block;width:0;height:0;border-top:.38em solid transparent;border-bottom:.38em solid transparent;border-left:.62em solid currentColor;margin-right:.6em;vertical-align:-.05em"></span>Listen to Playlists</a></div>
   </div>
 </section>
 
