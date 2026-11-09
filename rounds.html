@@ -25,7 +25,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--cream);color:var(--ink);
-  font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.65;font-variant-numeric:lining-nums}
+  font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:1.65;font-variant-numeric:lining-nums}
 img{max-width:100%;display:block}
 a{color:var(--navy-2)}
 h1,h2,h3{font-family:Cinzel,Georgia,serif;font-weight:700;color:var(--navy);line-height:1.25;margin:0 0 .5em}
@@ -35,10 +35,10 @@ strong{font-weight:700;color:var(--navy)}
 .read{max-width:780px;margin:0 auto;padding:0 24px}
 .ornament{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold);margin:0 auto 18px;max-width:340px}
 .ornament::before,.ornament::after{content:"";flex:1;height:1px;background:currentColor}
-.ornament span{font-size:22px;line-height:1}
+.ornament span{font-size:20px;line-height:1}
 
 /* buttons */
-.btn{display:inline-block;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:17px;letter-spacing:.06em;
+.btn{display:inline-block;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:16px;letter-spacing:.06em;
   text-decoration:none;padding:15px 30px;border-radius:999px;transition:transform .15s,box-shadow .15s,background .15s}
 .btn:hover{transform:translateY(-2px)}
 .btn-gold{background:linear-gradient(180deg,var(--gold-2),var(--gold));color:var(--navy);box-shadow:0 6px 18px rgba(201,160,70,.45)}
@@ -50,8 +50,8 @@ strong{font-weight:700;color:var(--navy)}
 /* top bar */
 .topbar{position:absolute;top:0;left:0;right:0;z-index:5;padding:18px 0}
 .topbar .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-.brand{font-family:Cinzel,serif;font-weight:700;color:var(--navy);text-decoration:none;letter-spacing:.08em;font-size:16px}
-.nav a{color:var(--navy);text-decoration:none;font-family:Cinzel,serif;font-weight:700;font-size:15px;letter-spacing:.08em;margin-left:22px}
+.brand{font-family:Cinzel,serif;font-weight:700;color:var(--navy);text-decoration:none;letter-spacing:.08em;font-size:15px}
+.nav a{color:var(--navy);text-decoration:none;font-family:Cinzel,serif;font-weight:700;font-size:14px;letter-spacing:.08em;margin-left:22px}
 .nav a{text-shadow:0 0 8px rgba(251,245,230,.95),0 0 3px rgba(251,245,230,.95)}
 .nav a:hover{opacity:1;color:#7d5a10;text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:3px;text-underline-offset:7px}
 .nav a.on{opacity:1;color:var(--navy);text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:3px;text-underline-offset:7px}
@@ -63,55 +63,55 @@ strong{font-weight:700;color:var(--navy)}
 .hero::before{content:"";position:absolute;inset:0;
   background:radial-gradient(ellipse 52% 62% at 52% 52%,rgba(251,245,230,.84) 0%,rgba(251,245,230,.66) 45%,rgba(251,245,230,0) 100%),linear-gradient(90deg,rgba(251,245,230,0) 0%,rgba(251,245,230,0) 28%,rgba(251,245,230,.22) 60%,rgba(251,245,230,.38) 100%)}
 .hero .wrap{position:relative;padding-top:110px;padding-bottom:50px}
-.back{display:inline-block;font-family:Arial,sans-serif;font-weight:700;font-size:19px;color:var(--navy-2);text-decoration:none;margin-bottom:18px;text-shadow:0 0 10px rgba(251,245,230,.95)}
+.back{display:inline-block;font-family:Arial,sans-serif;font-weight:700;font-size:17px;color:var(--navy-2);text-decoration:none;margin-bottom:18px;text-shadow:0 0 10px rgba(251,245,230,.95)}
 .back:hover{text-decoration:underline}
-.page-links{text-align:center;margin:44px 0 0;font-family:Arial,sans-serif;font-weight:700;font-size:20px}
+.page-links{text-align:center;margin:44px 0 0;font-family:Arial,sans-serif;font-weight:700;font-size:18px}
 .page-links a{color:var(--gold-2);text-decoration:none;margin:0 18px;display:inline-block;padding:6px 0}
 .page-links a:hover{text-decoration:underline}
-.hero h1{color:var(--navy);font-size:clamp(40px,6.5vw,78px);letter-spacing:.03em;text-shadow:0 0 24px rgba(251,245,230,.9),0 0 6px rgba(251,245,230,.9);margin-bottom:.35em}
+.hero h1{color:var(--navy);font-size:clamp(38px,6.5vw,76px);letter-spacing:.03em;text-shadow:0 0 24px rgba(251,245,230,.9),0 0 6px rgba(251,245,230,.9);margin-bottom:.35em}
 .hero h1 em{font-style:normal;color:var(--navy-2)}
-.hero p.lead{font-size:clamp(21px,2.3vw,26px);max-width:600px;text-wrap:balance;margin:0 auto;color:var(--navy);background:rgba(251,245,230,.82);border:1px solid rgba(201,162,74,.45);border-radius:14px;padding:.45em .8em;box-shadow:0 4px 18px rgba(20,30,70,.12)}
+.hero p.lead{font-size:clamp(19px,2.3vw,24px);max-width:600px;text-wrap:balance;margin:0 auto;color:var(--navy);background:rgba(251,245,230,.82);border:1px solid rgba(201,162,74,.45);border-radius:14px;padding:.45em .8em;box-shadow:0 4px 18px rgba(20,30,70,.12)}
 
 /* sections */
 section{padding:80px 0}
 section.alt{background:var(--cream-2)}
-h2{font-size:clamp(30px,3.8vw,42px);text-align:center}
-.read h3{font-size:24px}
+h2{font-size:clamp(28px,3.8vw,40px);text-align:center}
+.read h3{font-size:22px}
 
 /* "Imagine" intro */
-.imagine p{font-size:27px;line-height:1.55;margin-bottom:1.1em}
+.imagine p{font-size:25px;line-height:1.55;margin-bottom:1.1em}
 .imagine p b{font-family:Cinzel,serif;font-weight:700;color:var(--gold);font-size:.9em;letter-spacing:.04em}
-.intro-end{text-align:center;font-size:24px}
+.intro-end{text-align:center;font-size:22px}
 .intro-end em{color:var(--navy-2);font-weight:600}
 
 /* key statement callout (no highlight stripes) */
-.callout{margin:34px 0;padding:24px 30px;text-align:center;font-size:25px;line-height:1.5;color:var(--navy);
+.callout{margin:34px 0;padding:24px 30px;text-align:center;font-size:23px;line-height:1.5;color:var(--navy);
   border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);font-weight:600}
-.callout::before{content:"\2726";display:block;color:var(--gold);font-size:20px;margin-bottom:8px}
+.callout::before{content:"\2726";display:block;color:var(--gold);font-size:18px;margin-bottom:8px}
 
 /* three works */
 .works{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:30px 0 34px}
 .work{background:#fff;border-radius:16px;padding:26px 22px;text-align:center;box-shadow:0 6px 22px rgba(19,33,74,.08);border-top:4px solid var(--gold)}
-.work .num{font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:18px;letter-spacing:.12em;color:var(--muted)}
-.work .icon{font-size:38px;line-height:1;margin:10px 0 8px;color:var(--gold)}
-.work h3{font-size:21px;margin-bottom:.4em}
-.work p{font-size:22px;margin:0;line-height:1.5}
+.work .num{font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:16px;letter-spacing:.12em;color:var(--muted)}
+.work .icon{font-size:36px;line-height:1;margin:10px 0 8px;color:var(--gold)}
+.work h3{font-size:19px;margin-bottom:.4em}
+.work p{font-size:20px;margin:0;line-height:1.5}
 
 /* quotes from the Book of Heaven */
 .quote{position:relative;margin:30px 0 34px;padding:30px 34px 26px 74px;background:#fff;
   border-left:5px solid var(--gold);border-radius:0 16px 16px 0;box-shadow:0 8px 26px rgba(19,33,74,.09);
-  font-size:24px;line-height:1.65;color:#1f1f2e}
+  font-size:22px;line-height:1.65;color:#1f1f2e}
 .quote::before{content:"\201C";position:absolute;left:18px;top:6px;font-family:Georgia,serif;font-style:normal;
-  font-size:84px;line-height:1;color:var(--gold)}
+  font-size:82px;line-height:1;color:var(--gold)}
 .quote p{margin:0 0 .8em}
 .quote p:last-of-type{margin-bottom:0}
-.quote cite{display:block;margin-top:16px;font-style:normal;font-family:Cinzel,serif;font-size:17px;
+.quote cite{display:block;margin-top:16px;font-style:normal;font-family:Cinzel,serif;font-size:16px;
   letter-spacing:.06em;color:var(--muted)}
 .quote cite::before{content:"\2014\00a0"}
 .quote.dark{background:var(--navy);color:#f6ecd3;border-left-color:var(--gold-2)}
 .quote.dark::before{color:var(--gold-2)}
 .quote.dark cite{color:var(--gold-2)}
-.says{font-family:Cinzel,serif;font-size:19px;letter-spacing:.08em;color:var(--gold);margin:30px 0 -14px;font-weight:700}
+.says{font-family:Cinzel,serif;font-size:17px;letter-spacing:.08em;color:var(--gold);margin:30px 0 -14px;font-weight:700}
 
 /* reference lines that describe a passage */
 .ref{padding-left:18px;border-left:3px solid var(--gold-2);color:#4a3f2c}
@@ -119,68 +119,68 @@ section.alt .ref{border-left-color:#e2d3ac}
 
 /* scripture */
 .scripture{text-align:center;margin:26px auto 0;max-width:640px}
-.scripture q{display:block;font-family:Cinzel,serif;font-weight:700;font-size:clamp(24px,3vw,32px);color:var(--navy);line-height:1.35;quotes:"\201C" "\201D"}
-.scripture span{display:block;margin-top:10px;font-size:20px;color:var(--muted);letter-spacing:.04em}
+.scripture q{display:block;font-family:Cinzel,serif;font-weight:700;font-size:clamp(22px,3vw,30px);color:var(--navy);line-height:1.35;quotes:"\201C" "\201D"}
+.scripture span{display:block;margin-top:10px;font-size:18px;color:var(--muted);letter-spacing:.04em}
 
 /* six purposes */
 .purpose{margin-top:60px}
 .purpose:first-of-type{margin-top:20px}
 .purpose-head{display:flex;align-items:center;gap:18px;margin-bottom:18px}
 .purpose-head .n{flex:0 0 52px;height:52px;border-radius:50%;background:var(--navy);color:var(--gold-2);
-  font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:26px;display:flex;align-items:center;justify-content:center}
-.purpose-head h3{margin:0;font-size:24px}
+  font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:24px;display:flex;align-items:center;justify-content:center}
+.purpose-head h3{margin:0;font-size:22px}
 
 /* "participation in the LIFE of God" band */
 .life{background:var(--navy);color:#f6ecd3;text-align:center;position:relative;overflow:hidden;padding:76px 0}
 .life::before{content:"";position:absolute;inset:0;background:url(images/scene-throne-soft.jpg) center/cover no-repeat;opacity:.13}
 .life .read{position:relative}
-.life p{font-size:27px;line-height:1.55;margin:0}
+.life p{font-size:25px;line-height:1.55;margin:0}
 .life strong{color:var(--gold-2);font-family:Cinzel,serif;letter-spacing:.06em}
 
 /* sample prayer */
 .prayer{margin:30px auto 34px;max-width:680px;padding:40px 40px 34px;text-align:center;
   background:#fffdf7;border:1px solid var(--gold);border-radius:6px;outline:6px solid #fffdf7;
   box-shadow:0 0 0 7px var(--gold-2),0 14px 34px rgba(19,33,74,.12)}
-.prayer .label{font-family:Cinzel,serif;font-weight:700;font-size:17px;letter-spacing:.18em;color:var(--gold);margin-bottom:16px}
-.prayer p{font-size:24px;line-height:1.6;color:var(--navy);margin:0 0 .75em}
+.prayer .label{font-family:Cinzel,serif;font-weight:700;font-size:16px;letter-spacing:.18em;color:var(--gold);margin-bottom:16px}
+.prayer p{font-size:22px;line-height:1.6;color:var(--navy);margin:0 0 .75em}
 .prayer p:last-child{margin:0;font-weight:700}
 
-.exclaim{font-family:Cinzel,serif;font-weight:700;font-size:23px;color:var(--navy);text-align:center;margin:44px 0 0}
-.lead-in{font-size:22px;color:var(--navy);line-height:1.5}
+.exclaim{font-family:Cinzel,serif;font-weight:700;font-size:21px;color:var(--navy);text-align:center;margin:44px 0 0}
+.lead-in{font-size:20px;color:var(--navy);line-height:1.5}
 .caps{font-family:Cinzel,serif;font-weight:700;color:var(--gold);letter-spacing:.05em}
 /* songs section */
-.songs-lead{text-align:center;font-size:23px;color:var(--navy);margin-bottom:1.2em}
-.places-h{text-align:center;font-family:Cinzel,serif;color:var(--navy);font-size:26px;margin:46px 0 22px}
+.songs-lead{text-align:center;font-size:21px;color:var(--navy);margin-bottom:1.2em}
+.places-h{text-align:center;font-family:Cinzel,serif;color:var(--navy);font-size:24px;margin:46px 0 22px}
 .places{display:flex;flex-wrap:wrap;justify-content:center;gap:26px 6px;margin:0 0 50px;padding:0;list-style:none}
-.places li{width:134px;text-align:center;font-size:22px;line-height:1.25;color:var(--navy)}
+.places li{width:134px;text-align:center;font-size:20px;line-height:1.25;color:var(--navy)}
 .places .ic{display:flex;align-items:center;justify-content:center;width:84px;height:84px;margin:0 auto 12px;border-radius:50%;background:#fff;border:2px solid var(--gold)}
 .places svg{width:42px;height:42px;fill:none;stroke:var(--navy-2);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .refrain-card{position:relative;background:var(--navy);color:#f6ecd3;text-align:center;border-radius:14px;padding:38px 30px 32px;outline:1px solid rgba(232,198,106,.55);outline-offset:-10px}
-.refrain-card p{margin:0;font-size:23px}
-.refrain{font-family:Cinzel,serif;font-weight:700;font-size:clamp(28px,4.2vw,40px);color:var(--gold-2);margin:16px 0 18px;line-height:1.2}
+.refrain-card p{margin:0;font-size:21px}
+.refrain{font-family:Cinzel,serif;font-weight:700;font-size:clamp(26px,4.2vw,38px);color:var(--gold-2);margin:16px 0 18px;line-height:1.2}
 .refrain .note{font-family:Arial,sans-serif;font-weight:400;font-size:.75em;opacity:.85}
 
 /* closing */
 .closing{background:var(--navy);color:#f6ecd3;text-align:center;position:relative;overflow:hidden}
 .closing::before{content:"";position:absolute;inset:0;background:url(images/scene-dance.jpg) center/cover no-repeat;opacity:.14}
 .closing .read{position:relative}
-.closing .blessing{font-family:Cinzel,serif;font-weight:700;font-size:clamp(24px,3vw,32px);color:#fff;line-height:1.45;margin-bottom:40px}
+.closing .blessing{font-family:Cinzel,serif;font-weight:700;font-size:clamp(22px,3vw,30px);color:#fff;line-height:1.45;margin-bottom:40px}
 .closing .blessing span{display:block;color:var(--gold-2)}
 .closing .ctas,.life .ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .life .ctas{margin-top:34px}
 .cd-end{margin-top:44px;padding-top:34px;border-top:1px solid rgba(232,198,106,.35)}
-.cd-end p{font-size:24px;margin-bottom:20px}
+.cd-end p{font-size:22px;margin-bottom:20px}
 .more{margin-top:44px;padding-top:34px;border-top:1px solid rgba(232,198,106,.35)}
-.more p{font-size:24px;margin-bottom:14px}
-.more .more-note{font-size:22px;color:#e9dcbc;max-width:620px;margin:0 auto 24px}
+.more p{font-size:22px;margin-bottom:14px}
+.more .more-note{font-size:20px;color:#e9dcbc;max-width:620px;margin:0 auto 24px}
 .more .more-note strong{color:var(--gold-2)}
 
-footer{background:var(--navy);color:#cbbd98;text-align:center;padding:50px 0;font-size:18px;border-top:1px solid rgba(232,198,106,.25)}
+footer{background:var(--navy);color:#cbbd98;text-align:center;padding:50px 0;font-size:16px;border-top:1px solid rgba(232,198,106,.25)}
 footer a{color:var(--gold-2)}
 footer .links{margin:10px 0 16px}
 footer .links a{margin:0 12px}
-footer .copy{font-size:14px;opacity:.85}
-footer .contact{font-size:20px;margin:0 0 16px}
+footer .copy{font-size:13px;opacity:.85}
+footer .contact{font-size:18px;margin:0 0 16px}
 
 @media (max-width:1100px){
   .topbar .wrap{justify-content:center;flex-direction:column;gap:6px}
@@ -190,25 +190,25 @@ footer .contact{font-size:20px;margin:0 0 16px}
 }
 @media (max-width:820px){
   .works{grid-template-columns:1fr}
-  .nav a{font-size:14px}
+  .nav a{font-size:13px}
 }
 @media (max-width:600px){
-  body{font-size:19px}
+  body{font-size:17px}
   .topbar .wrap{justify-content:center}
   .nav{text-align:center}
-  .nav a{display:inline-block;margin:4px 3px;font-size:15px;padding:7px 12px;border-radius:999px;background:rgba(251,245,230,.88);border:1px solid var(--gold);text-shadow:none}
+  .nav a{display:inline-block;margin:4px 3px;font-size:14px;padding:7px 12px;border-radius:999px;background:rgba(251,245,230,.88);border:1px solid var(--gold);text-shadow:none}
   .hero .wrap{padding-top:130px}
-  .imagine p{font-size:23px}
-  .quote{padding:56px 22px 22px;font-size:22px}
-  .prayer p{font-size:22px}
-  .quote::before{left:16px;top:2px;font-size:70px}
+  .imagine p{font-size:21px}
+  .quote{padding:56px 22px 22px;font-size:20px}
+  .prayer p{font-size:20px}
+  .quote::before{left:16px;top:2px;font-size:68px}
   .prayer{padding:30px 22px 26px}
 }
 
 .share{margin:40px 0 0;text-align:center}
-.share p{margin:0 0 14px;font-size:22px;color:#f6ecd3}
+.share p{margin:0 0 14px;font-size:20px;color:#f6ecd3}
 .share button{cursor:pointer;background:none}
-.share .share-msg{min-height:1.4em;margin:12px 0 0;font-family:Arial,sans-serif;font-weight:700;font-size:19px;color:var(--gold-2)}
+.share .share-msg{min-height:1.4em;margin:12px 0 0;font-family:Arial,sans-serif;font-weight:700;font-size:17px;color:var(--gold-2)}
 </style>
 </head>
 <body id="top">
