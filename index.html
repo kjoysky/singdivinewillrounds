@@ -375,6 +375,40 @@ section.hero{padding:0}
 .show-group .covers,.show-group .phones{background:rgba(251,245,230,.95);border:2px solid var(--gold-2);border-radius:16px;padding:min(14px,1.8vh) min(18px,2.2vw);box-shadow:0 14px 36px rgba(0,0,0,.55)}
 .show-group .covers{gap:min(18px,2vw)}
 @media (max-width:600px){.showcase{padding:0;gap:12px;--ph:clamp(100px,min(calc(100vh - 480px),36vw),210px)}.show-group .covers,.show-group .phones{padding:7px;border-radius:12px}.show-group .covers{gap:6px}.show-group .covers img{width:calc(var(--ph)*.56)}.show-label{padding:6px 9px;font-size:12px}.lbl-the{display:none}.hero-app-new{font-size:10px;padding:2px 6px;margin-right:3px}}
+/* mockup look (11/09) */
+.hero .wrap{padding-top:62px}
+.showcase{--ph:clamp(105px,calc(100vh - 485px),330px)}
+.listen-cta{margin-top:min(14px,1.6vh)}
+.hero .wrap{padding-bottom:10px}
+.topbar .brand{display:none}
+.topbar .wrap{justify-content:center}
+.topbar{border-bottom:1.5px solid var(--gold-2);padding:14px 0}
+.topbar::after{content:"";position:absolute;left:50%;bottom:-7px;width:12px;height:12px;margin-left:-6px;background:var(--gold-2);transform:rotate(45deg);box-shadow:0 0 10px rgba(232,198,106,.8)}
+.nav a{margin:0 14px}
+@media (max-width:1100px){.hero .wrap{padding-top:70px}}
+.hero::before{background:radial-gradient(ellipse 60% 55% at 50% 38%,rgba(24,20,40,.62) 0%,rgba(24,20,40,.38) 55%,rgba(24,20,40,.12) 100%),linear-gradient(180deg,rgba(255,196,120,.16),rgba(255,214,160,.08))}
+.hero h1{font-size:clamp(28px,min(5.6vw,6.6vh),64px);line-height:1.02;margin-bottom:0;text-shadow:0 3px 18px rgba(0,0,0,.55)}
+.hero h1 .h1-sing{display:block;font-size:1.3em;background:linear-gradient(180deg,#fff 30%,#f3dfa6);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 3px 10px rgba(0,0,0,.55))}
+.hero h1 em{background:linear-gradient(180deg,#fbe9a6 10%,#e2b64a 55%,#b8862a);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 3px 10px rgba(0,0,0,.55))}
+.hero-flourish{display:flex;align-items:center;justify-content:center;gap:6px;max-width:620px;margin:min(6px,.8vh) auto min(8px,1vh)}
+.fl-line{flex:1;height:2px;background:linear-gradient(90deg,transparent,var(--gold-2));border-radius:2px}
+.fl-line.r{background:linear-gradient(90deg,var(--gold-2),transparent)}
+.lily{width:clamp(80px,12vh,120px);height:auto;filter:drop-shadow(0 2px 6px rgba(0,0,0,.4))}
+.hero p.lead{color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.75)}
+.showcase{display:inline-flex;align-items:stretch;background:linear-gradient(180deg,rgba(255,250,238,.97),rgba(248,238,214,.97));border:2px solid var(--gold-2);border-radius:22px;padding:min(18px,2.2vh) 0 min(16px,2vh);box-shadow:0 0 0 1px rgba(255,255,255,.4),0 0 34px rgba(255,205,120,.65),0 18px 46px rgba(0,0,0,.45);gap:0}
+.show-group{padding:0 clamp(18px,3.4vw,46px);justify-content:flex-end}
+.show-group+.show-group{position:relative}
+.show-group+.show-group::before{content:"";position:absolute;left:0;top:6%;bottom:6%;width:1.5px;background:linear-gradient(180deg,transparent,var(--gold),transparent)}
+.show-group+.show-group::after{content:"\2726";position:absolute;left:0;top:50%;transform:translate(-50%,-60%);color:var(--gold);font-size:16px;line-height:1;background:#fbf4e2;padding:2px 0}
+.show-group .covers,.show-group .phones{background:none;border:0;box-shadow:none;padding:0;border-radius:0}
+.show-group .covers img{border:0;box-shadow:0 8px 18px rgba(19,33,74,.4)}
+@media (max-width:600px){
+  .showcase{padding:10px 0 10px;border-radius:16px}
+  .show-group{padding:0 10px}
+  .show-group+.show-group::after{font-size:12px}
+  .hero .wrap{padding-top:118px}
+  .showcase{--ph:clamp(95px,min(calc(100vh - 500px),36vw),210px)}
+}
 </style>
 </head>
 <body>
@@ -397,7 +431,8 @@ section.hero{padding:0}
 
 <section class="hero">
   <div class="wrap">
-    <h1>Sing <em>Divine Will</em> Rounds</h1>
+    <h1><span class="h1-sing">Sing</span> <em>Divine Will</em> Rounds</h1>
+    <div class="hero-flourish"><span class="fl-line"></span><svg class="lily" viewBox="0 0 120 50" aria-hidden="true"><g fill="#fff" stroke="#e8c66a" stroke-width="1.2"><path d="M60 40 C50 30 44 14 52 4 C56 16 60 26 60 40Z"/><path d="M60 40 C70 30 76 14 68 4 C64 16 60 26 60 40Z"/><path d="M60 40 C46 36 32 30 26 18 C40 22 52 30 60 40Z"/><path d="M60 40 C74 36 88 30 94 18 C80 22 68 30 60 40Z"/><path d="M40 44 C32 38 22 36 14 38 C24 42 32 46 40 44Z"/><path d="M80 44 C88 38 98 36 106 38 C96 42 88 46 80 44Z"/></g><circle cx="60" cy="38" r="3" fill="#e8c66a"/></svg><span class="fl-line r"></span></div>
     <p class="lead">Sung prayers to join Jesus in the Rounds of the Divine Will, inspired by the <em>Book of Heaven</em> of Luisa Piccarreta.</p>
     <div class="showcase">
       <a class="show-group" href="#cds">
