@@ -298,7 +298,7 @@ footer .contact{font-size:18px;margin:0 0 16px}
 .showcase{display:flex;justify-content:center;align-items:flex-end;gap:clamp(24px,5vw,70px);margin-top:24px}
 .show-group{display:flex;flex-direction:column;align-items:center;text-decoration:none;color:#fff}
 .show-group .covers,.show-group .phones{display:flex;align-items:flex-end;gap:16px}
-.show-group .covers img{width:calc(var(--ph)*.52);border-radius:6px;box-shadow:0 14px 34px rgba(0,0,0,.55);transform:rotate(-4deg)}
+.show-group .covers img{width:calc(var(--ph)*.7);border-radius:6px;box-shadow:0 14px 34px rgba(0,0,0,.55);transform:rotate(-4deg)}
 .show-group .covers img+img{transform:rotate(4deg)}
 .show-label{margin-top:16px;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:18px;letter-spacing:.06em;background:#fbf5e6;color:var(--navy);border:2px solid var(--gold-2);border-radius:999px;padding:8px 20px;position:relative;box-shadow:0 6px 18px rgba(0,0,0,.4)}
 .show-group:hover .show-label{background:#fff}
@@ -312,7 +312,7 @@ footer .contact{font-size:18px;margin:0 0 16px}
   .hero p.lead{margin-bottom:16px}
 }
 /* hero fits one screen (11/09) */
-.showcase{--ph:clamp(105px,calc(100vh - 475px),320px);margin-top:min(24px,2.6vh)}
+.showcase{--ph:clamp(100px,calc(100vh - 505px),300px);margin-top:min(24px,2.6vh)}
 .hero{min-height:100vh;min-height:100svh}
 .hero .wrap{padding-top:78px;padding-bottom:16px}
 .hero h1{font-size:clamp(26px,min(4.6vw,7vh),56px)}
@@ -326,7 +326,7 @@ footer .contact{font-size:18px;margin:0 0 16px}
 @media (max-width:1100px){.hero .wrap{padding-top:100px}}
 @media (max-width:600px){
   .hero .wrap{padding-top:124px}
-  .showcase{--ph:clamp(100px,calc(100vh - 520px),180px)}
+  .showcase{--ph:clamp(95px,calc(100vh - 545px),170px)}
   .phone{border-width:1.5px}
   .phone::before{right:-4px;width:2px}.phone::after{left:-4px;width:2px}
 }
@@ -357,6 +357,13 @@ section.hero{padding:0}
 .app-shots .phone img{height:var(--ph);border:0;scroll-snap-align:none}
 @media (max-width:600px){.app-shots{--ph:190px;gap:14px 10px}}
 @media (max-width:400px){.app-shots{--ph:165px}}
+/* showcase stands out on a cream panel (11/09) */
+.showcase{display:inline-flex;background:rgba(251,245,230,.94);border:2px solid var(--gold-2);border-radius:20px;padding:min(18px,2.2vh) clamp(18px,3vw,40px) min(14px,1.8vh);box-shadow:0 18px 50px rgba(0,0,0,.55)}
+.show-label{background:var(--navy);color:#fff;border-color:var(--gold)}
+.show-group:hover .show-label{background:var(--navy-2)}
+.show-group .covers img{border:2px solid var(--gold);box-shadow:0 10px 22px rgba(19,33,74,.45)}
+.showcase .phone{box-shadow:0 0 0 1px #1c1d21,0 10px 22px rgba(19,33,74,.45)}
+@media (max-width:600px){.showcase{padding:12px 12px 10px;border-radius:16px}}
 </style>
 </head>
 <body>
