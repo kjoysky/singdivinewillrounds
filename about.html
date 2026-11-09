@@ -360,6 +360,13 @@ footer{padding:30px 0}
 @media (min-width:1300px){
   main>section:not(.hero),footer,.topbar{zoom:var(--z,1)}
 }
+/* About fills screen (11/09) */
+.about{grid-template-columns:1fr 1.25fr!important;gap:60px!important}
+.about > .about-left img{position:static!important}
+.about-left .quote:first-of-type{margin-top:34px}
+.quote{font-style:normal!important}
+@media (min-width:1300px){#about .wrap{max-width:1180px}}
+@media (max-width:860px){.about{display:flex!important;flex-direction:column}.about-left{display:contents}.about-left img{order:0}.about-main{order:1}.about-left .quote,.about-left .esther-intro{order:2}}
 </style>
 <script>
 (function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
@@ -394,8 +401,17 @@ footer{padding:30px 0}
 
 <section id="about">
   <div class="wrap about">
-    <img src="images/scene-throne.jpg" alt="Painting of a queen kneeling before the King's throne in heaven, with Jesus crowned with thorns">
-    <div>
+    <div class="about-left">
+      <img src="images/scene-throne.jpg" alt="Painting of a queen kneeling before the King's throne in heaven, with Jesus crowned with thorns">
+      <blockquote class="quote">&ldquo;I was praying, and my sweet Jesus came, placing Himself near me in order to pray together with me; even more, His intelligence was reflected in mine, and I prayed with His; His voice echoed in mine, and I prayed with His word. But who can say the boundless effects of this prayer?&rdquo;
+        <cite>Servant of God Luisa Piccarreta, <em>Book of Heaven</em>, Vol. 15, April 25, 1923</cite>
+      </blockquote>
+      <p class="esther-intro">As you pray or sing these rounds, you become like Esther before the King&rsquo;s throne, asking for mercy upon humanity.</p>
+      <blockquote class="quote">&ldquo;This creature in Our Will is the New Esther wanting to rescue her peoples. O! how Happy We are to keep her always with Us in Our Will because, through her, We feel more inclined to use Mercy, to concede Graces, to Forgive the most obstinate sinners, and to lessen the pains of the purging souls. Poor daughter! She has a thought for everyone, and a pain similar to Ours, seeing the human family swimming in Our Will without recognizing It&mdash;living in the middle of enemies in the most wretched misery.&rdquo;
+        <cite>Servant of God Luisa Piccarreta, <em>Book of Heaven</em>, Vol. 36, October 30, 1938</cite>
+      </blockquote>
+    </div>
+    <div class="about-main">
       <p><strong>Hello! My name is Kristina Joy.</strong> I am an oil painter from Minnesota with a deep love for the Divine Will and the writings of the <em>Book of Heaven</em> by Luisa Piccarreta.</p>
       <p>When I first began praying the Rounds of the Divine Will, it was a real struggle. Little by little, they became easier as I understood them more. But it was when God gave me the idea to set the Rounds to music that I began to LOVE praying them.</p>
       <p>Together with the Holy Spirit (it is mostly Him) and the assistance of AI technology, I create these Round Songs to help myself and others pray the Rounds of the Divine Will, joining our prayers with Jesus as we long for the coming of His Kingdom on earth. Technology can be used for evil or for good, and I want to use the tools available today for God&rsquo;s glory.</p>
@@ -416,13 +432,6 @@ footer{padding:30px 0}
         <a class="btn btn-gold" href="https://www.littlechildreninthedivinewill.com/sing-rounds-playlists" target="_blank" rel="noopener">Free Song Downloads</a>
         <a class="btn btn-outline" href="lyrics/Sing-Divine-Will-Rounds-Lyrics.pdf" target="_blank" rel="noopener">Lyrics PDF</a>
       </div></div>
-      <blockquote class="quote">&ldquo;I was praying, and my sweet Jesus came, placing Himself near me in order to pray together with me; even more, His intelligence was reflected in mine, and I prayed with His; His voice echoed in mine, and I prayed with His word. But who can say the boundless effects of this prayer?&rdquo;
-        <cite>Servant of God Luisa Piccarreta, <em>Book of Heaven</em>, Vol. 15, April 25, 1923</cite>
-      </blockquote>
-      <p class="esther-intro">As you pray or sing these rounds, you become like Esther before the King&rsquo;s throne, asking for mercy upon humanity.</p>
-      <blockquote class="quote">&ldquo;This creature in Our Will is the New Esther wanting to rescue her peoples. O! how Happy We are to keep her always with Us in Our Will because, through her, We feel more inclined to use Mercy, to concede Graces, to Forgive the most obstinate sinners, and to lessen the pains of the purging souls. Poor daughter! She has a thought for everyone, and a pain similar to Ours, seeing the human family swimming in Our Will without recognizing It&mdash;living in the middle of enemies in the most wretched misery.&rdquo;
-        <cite>Servant of God Luisa Piccarreta, <em>Book of Heaven</em>, Vol. 36, October 30, 1938</cite>
-      </blockquote>
     </div>
   </div>
 </section>
