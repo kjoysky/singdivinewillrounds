@@ -912,6 +912,10 @@ section.hero{padding:0}
 .thanks-card .btn{margin-top:6px;border:0;cursor:pointer;font-size:18px;padding:12px 40px}
 .tp-spin{width:46px;height:46px;border-radius:50%;border:5px solid var(--cream-2);border-top-color:#1f7a45;margin:4px auto 12px;animation:tpspin .9s linear infinite}
 @keyframes tpspin{to{transform:rotate(360deg)}}
+/* app screenshots: never squish phones; wrap into rows on small screens (11/13) */
+.app-shots .phone{flex:none!important}
+@media (max-width:760px){.app-shots{--ph:170px!important;flex-wrap:wrap!important;justify-content:center!important;overflow:visible!important;gap:14px 10px!important}}
+@media (max-width:360px){.app-shots{--ph:150px!important}}
 </style>
 <script>
 (function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
@@ -1140,18 +1144,6 @@ section.hero{padding:0}
       </div>
       </div>
       <p class="app-note" style="margin-bottom:18px">The first 5 songs are free in the app. The full library is $24.99 a year or $4.99 a month.</p>
-      <div class="app-why-pay">
-        <h3>Why Does the App Cost Money?</h3>
-        <p>I wish I could give the app away for free! But making it comes with real costs:</p>
-        <ul class="why-list">
-          <li>Apple charges a yearly fee just to keep an app in the App Store, and keeps part of every purchase.</li>
-          <li>The music tools I use to create the songs have monthly fees.</li>
-          <li>The website name (singdivinewillrounds.com) has to be renewed every year.</li>
-          <li>The app needs ongoing updates so it keeps working well when Apple releases new iPhones and new iPhone software, plus fixes and new features.</li>
-        </ul>
-        <p>Your subscription helps cover these costs and lets me keep making new songs, which show up in the app on their own.</p>
-        <p style="margin-bottom:0">If the app is not in your budget, that is okay! Every song is still <a href="https://www.littlechildreninthedivinewill.com/sing-rounds-playlists" target="_blank" rel="noopener">free to download</a> on the Little Children in the Divine Will website.</p>
-      </div>
     </div></div>
   </div>
 </section>
