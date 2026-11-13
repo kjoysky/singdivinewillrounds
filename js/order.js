@@ -113,3 +113,7 @@
   }
   if(document.readyState==='complete')render();else window.addEventListener('load',render);
 })();
+/* "Order Playlist 1/2" buttons: jump to the form and pick that CD */
+document.querySelectorAll('a[data-cd]').forEach(function(a){a.addEventListener('click',function(){
+  var p=document.querySelector('.pick[data-id="'+a.dataset.cd+'"]'),n=p&&p.querySelector('.q-num');
+  if(n&&n.textContent==='0')p.querySelector('.q-plus').click();});});
