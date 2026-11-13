@@ -284,6 +284,25 @@ p{margin:0 0 .7em}
 .exclaim{margin:22px 0 0!important;font-size:18px!important}
 .life{padding:26px 0!important}
 @media (max-width:600px){.quote{padding:40px 16px 14px!important;font-size:17px!important}.quote::before{top:-2px!important}}
+
+/* ONE set of font sizes, matching the home page (11/13 her ask) */
+.hero h1{font-size:clamp(34px,5vw,64px)!important}
+.hero p.lead{font-size:clamp(18px,2vw,24px)!important}
+section p,section li,.read p,.imagine p,.work p,.purpose p,.prayer p,.more p,.cd-end p,.share p,.intro-end,.lead-in,.songs-lead,.ref,.app-why-pay p,.app-why-pay li{font-size:20px!important;line-height:1.55}
+section p b,section p strong,section p em,section p a,section p span{font-size:inherit!important}
+.read h3,.work h3,.purpose-head h3,.app-why-pay h3{font-size:22px!important}
+.quote p,.quote{font-size:18px!important}
+.quote cite{font-size:15px!important}
+.callout,.callout span,.exclaim{font-size:20px!important}
+.says,.prayer .label{font-size:16px!important}
+.scripture q,.blessing,.blessing span,.refrain,.refrain .note,.life p,.life p strong{font-size:22px!important}
+.scripture span{font-size:18px!important}
+@media (max-width:860px){
+  section p,section li,.read p,.imagine p,.work p,.purpose p,.prayer p,.more p,.cd-end p,.share p,.intro-end,.lead-in,.songs-lead,.ref,.app-why-pay p,.app-why-pay li{font-size:18px!important}
+  .quote p,.quote{font-size:17px!important}
+  .scripture q,.blessing,.blessing span,.refrain .note,.life p,.life p strong{font-size:20px!important}
+  .read h3,.work h3,.purpose-head h3,.app-why-pay h3{font-size:20px!important}
+}
 </style>
 <script>
 (function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
@@ -296,12 +315,10 @@ p{margin:0 0 .7em}
     <a class="brand" href="index.html">SING DIVINE WILL ROUNDS</a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="sitenav">&#9776; Menu</button>
     <nav class="nav" id="sitenav">
-      <a href="index.html#playlist-1">The CDs</a>
-      <a href="index.html#playlist-1">Songs</a>
-      <a href="index.html#app">The App</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="rounds.html" class="on">What Are Rounds?</a>
-      <a href="index.html#order">Order the CDs</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
