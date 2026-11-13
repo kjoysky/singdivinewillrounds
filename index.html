@@ -778,6 +778,112 @@ section.hero{padding:0}
 @media (max-width:700px){.app-feat-box .app-list{padding-left:0!important;width:fit-content!important;margin:0 auto 10px!important}}
 #app-features{margin:0 0 16px!important}
 .app-list{grid-template-columns:1fr!important;width:fit-content;max-width:640px;margin:0 auto 10px!important;gap:12px!important}
+/* ORDER FORM on home page (11/13; replaces Kunaki steps) */
+.buy-sec .section-head{margin-bottom:20px}
+.buy-sec .buy-sub{font-size:19px;color:var(--ink)}
+.buy-wrap{max-width:760px;margin:0 auto}
+.step-box{background:#fff;border:1.5px solid var(--gold);border-radius:14px;padding:18px 22px 16px;margin:0 0 16px;box-shadow:0 8px 24px rgba(19,33,74,.08)}
+.step-box h3{font-size:clamp(20px,2.4vw,24px);display:flex;align-items:center;gap:10px;margin:0 0 12px}
+.step-box .snum{flex:none;display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--gold-2);font-size:18px}
+.pick-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pick{display:flex;align-items:center;gap:14px;border:1px solid var(--cream-2);border-radius:12px;padding:10px 12px;background:var(--cream)}
+.pick img{width:120px;flex:none;height:auto;border-radius:6px}
+.pick-info{flex:1}
+.pick h4{font-family:Cinzel,Georgia,serif;font-size:20px;color:var(--navy);margin:0}
+.pick .pmeta{color:var(--muted);font-size:15px}
+.pick .pprice{font-family:Cinzel,serif;font-weight:700;font-size:20px;color:var(--navy);margin:2px 0 6px}
+.pick.on{border:2.5px solid var(--gold);background:#fffaf0}
+.qty{display:inline-flex;align-items:center;gap:12px}
+.qty button{width:40px;height:40px;border-radius:50%;border:2px solid var(--navy);background:linear-gradient(180deg,var(--gold-2),var(--gold));color:var(--navy);font-size:24px;font-weight:700;line-height:1;cursor:pointer;font-family:Arial,sans-serif;padding:0}
+.qty button:disabled{opacity:.35;cursor:default}
+.qty .q-num{font-family:Cinzel,serif;font-weight:700;font-size:24px;min-width:26px;text-align:center;color:var(--navy)}
+.buy-note{font-size:15px;color:var(--muted);margin:10px 0 0;text-align:center}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px}
+.form-grid label{display:flex;flex-direction:column;font-weight:700;font-size:16px;color:var(--navy);gap:4px}
+.form-grid label.full{grid-column:1/-1}
+.form-grid .hint{font-weight:400;color:var(--muted);font-size:14px}
+.form-grid input,.form-grid select{font:inherit;font-weight:400;font-size:17px;color:var(--ink);padding:9px 12px;border:1.5px solid #bfae86;border-radius:8px;background:#fff;min-height:44px;width:100%}
+.form-grid input:focus,.form-grid select:focus{outline:3px solid var(--gold-2);border-color:var(--navy)}
+.form-grid .bad{border-color:#b5651d;background:#fff6ec}
+.buy-sum{width:100%;border-collapse:collapse;font-size:17px;margin:0 0 10px}
+.buy-sum td{padding:6px 4px;border-bottom:1px solid var(--cream-2)}
+.buy-sum td:last-child{text-align:right;white-space:nowrap}
+.buy-sum tr.total td{font-family:Cinzel,serif;font-weight:700;font-size:20px;color:var(--navy);border-bottom:0;padding-top:9px}
+.pay-msg{text-align:center;font-size:16px;color:var(--navy);background:var(--cream);border-radius:10px;padding:9px 12px;margin:4px 0 12px}
+.pay-buttons{max-width:400px;margin:0 auto}
+.pay-buttons.off{opacity:.45}
+.fastlane-tip{font-size:15px;color:var(--muted);text-align:center;max-width:520px;margin:10px auto 0}
+.thanks-box{text-align:center}
+.thanks-box p{font-size:18px}
+.thanks-box .small{font-size:15px;color:var(--muted)}
+@media (max-width:600px){.step-box{padding:16px 14px}.pick-grid,.form-grid{grid-template-columns:1fr}.pick img{width:100px}}
+
+/* compact form layout */
+.form-grid{grid-template-columns:repeat(6,1fr)!important}
+.form-grid label{display:block!important}
+.form-grid label input,.form-grid label select{display:block;margin-top:4px}
+.form-grid .c2{grid-column:span 2}.form-grid .c3{grid-column:span 3}.form-grid .c4{grid-column:span 4}.form-grid .c6{grid-column:1/-1}
+.form-grid label[hidden]{display:none!important}
+@media (max-width:600px){.form-grid .c2,.form-grid .c3,.form-grid .c4{grid-column:1/-1}.pick-grid{grid-template-columns:1fr 1fr!important;gap:10px}.pick{flex-direction:column;text-align:center;gap:6px;padding:10px 6px}.pick img{width:110px}.form-grid label:nth-child(6),.form-grid label:nth-child(7){grid-column:span 3}}
+.cds-sec .cd .price-alt{font-size:19px;color:var(--navy);margin:-2px 0 4px}
+@media (min-width:861px){.cds-sec .cd .price-alt{font-size:22px}}
+
+/* playlists compact + skinny (11/13 her ask) */
+.playlist{padding:30px 0!important}
+.playlist .section-head{margin-bottom:14px}
+.playlist .section-head .ornament{margin-bottom:6px}
+.playlist .section-head h2{font-size:clamp(26px,3vw,34px)!important;margin-bottom:4px}
+.playlist .section-head p{font-size:17px!important}
+.playlist .pl-grid{max-width:900px;margin:0 auto;grid-template-columns:1fr 240px!important;gap:24px!important;align-items:center}
+.pl-panel{padding:10px 10px 6px!important;border-radius:14px!important}
+.pl-panel .sample-note{font-size:16px!important;margin:0 0 4px!important}
+.pl-panel .track{padding:3px 8px!important;gap:10px!important}
+.pl-panel .track .thumb{width:56px!important;height:32px!important;border-width:1px}
+.pl-panel .track .title{font-size:16px!important}
+.pl-panel .track .time,.pl-panel .track .num{font-size:14px!important}
+.pl-panel .play{width:30px!important;height:30px!important}
+.pl-side .pl-cover{width:100%;max-width:240px;margin:0 auto;border-radius:8px}
+.pl-side .pl-price{margin:10px 0 4px!important;font-size:22px!important}
+.pl-side .pl-order-img img{max-width:200px!important;margin:0 auto}
+@media (max-width:860px){.playlist .pl-grid{grid-template-columns:1fr!important}.pl-side{display:grid;grid-template-columns:130px 1fr;align-items:center;gap:6px 14px;text-align:left}.pl-side .pl-cover{grid-row:span 2;max-width:130px}.pl-side .pl-price{margin:0!important}.pl-side .pl-order-img img{margin:0}}
+@media (max-width:600px){
+  .pl-panel .track{grid-template-columns:32px 56px 1fr auto!important;grid-template-rows:auto!important;padding:5px 2px!important;column-gap:8px!important}
+  .pl-panel .track .title{grid-column:3!important;grid-row:1!important;align-self:center!important;font-size:16px!important}
+  .pl-panel .track .time{grid-column:4!important;grid-row:1!important;align-self:center!important;margin:0!important;font-size:13px!important}
+  .pl-panel .track .thumb{grid-row:1!important}
+  .pl-panel .play{grid-row:1!important}
+}
+
+/* compact pass (11/13) */
+.buy-sec{padding:34px 0!important}
+.app-sec{padding:34px 0!important}
+.app-sec .free-frame{max-width:1060px!important}
+.app-sec .free-box{max-width:1020px!important;padding:20px 24px!important}
+.app-shots{--ph:250px!important;flex-wrap:nowrap!important;gap:10px!important;justify-content:flex-start!important;overflow-x:auto!important;margin:4px 0 12px!important;padding-bottom:8px!important}
+@media (min-width:1100px){.app-shots{justify-content:center!important}.app-shots{--ph:235px!important}}
+.app-two{display:grid;grid-template-columns:1fr 1.25fr;gap:14px;align-items:stretch;margin:0 0 10px}
+.app-two > *{margin:0!important}
+.app-two .app-story{font-size:16px}
+.app-two .app-story p{margin:0 0 10px}
+.app-two .app-list li{font-size:16px}
+.app-why-pay{padding:16px 22px!important;margin-top:8px!important}
+.app-why-pay p,.app-why-pay li{font-size:16px!important;margin-bottom:6px!important}
+.app-why-pay .why-list{columns:2;column-gap:28px}
+.app-why-pay .why-list li{break-inside:avoid}
+.app-note{margin:6px 0 8px!important;font-size:17px!important;text-align:center!important}
+@media (max-width:760px){.app-two{grid-template-columns:1fr}.app-why-pay .why-list{columns:1}.app-shots{--ph:200px!important}}
+.closing-quote{padding:34px 0!important}
+.closing-quote blockquote{font-size:18px!important;line-height:1.5!important;max-width:900px}
+.closing-quote blockquote p{margin:0 0 10px!important}
+.closing-quote cite{margin-top:10px!important;font-size:15px!important}
+
+/* smaller section headings (11/13) */
+.section-head{margin-bottom:14px!important}
+.section-head .ornament{max-width:220px;margin-bottom:4px!important;gap:10px}
+.section-head .ornament span{font-size:15px}
+.section-head h2{font-size:clamp(24px,2.6vw,30px)!important;margin-bottom:2px!important}
+.section-head p{font-size:17px!important;margin-top:0}
+.app-sec h2{font-size:clamp(22px,2.4vw,28px)!important}
 </style>
 <script>
 (function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
@@ -790,12 +896,12 @@ section.hero{padding:0}
     <a class="brand" href="index.html">SING DIVINE WILL ROUNDS</a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="sitenav">&#9776; Menu</button>
     <nav class="nav" id="sitenav">
-      <a href="#cds">The CDs</a>
+      <a href="#playlist-1">The CDs</a>
       <a href="#playlist-1">Songs</a>
       <a href="#app">The App</a>
       <a href="about.html">About</a>
       <a href="rounds.html">What Are Rounds?</a>
-      <a href="#order">How to Order</a>
+      <a href="#order">Order the CDs</a>
     </nav>
   </div>
 </header>
@@ -808,7 +914,7 @@ section.hero{padding:0}
     <div class="hero-flourish"><span class="fl-line"></span><span class="fl-line r"></span></div>
     <p class="lead">Sung prayers to join Jesus in the Rounds of the Divine Will, inspired by the <em>Book of Heaven</em> of Luisa Piccarreta.</p>
     <div class="showcase">
-      <div class="show-col"><a class="show-group" href="#cds">
+      <div class="show-col"><a class="show-group" href="#playlist-1">
         <div class="covers">
           <img src="images/playlist-1-cd.jpg" alt="Playlist 1 CD in its case">
           <img src="images/playlist-2-cd.jpg" alt="Playlist 2 CD in its case">
@@ -826,88 +932,6 @@ section.hero{padding:0}
   </div>
 </section>
 
-
-<section id="cds" class="cds-sec">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="ornament"><span>&#10022;</span></div>
-      <h2>The CDs &amp; the App</h2>
-      <p class="cds-intro-lead">Two beautiful albums of Divine Will round songs to help you sing, pray, and offer your love to God for every&nbsp;soul.</p>
-      <div class="cds-intro-rule" aria-hidden="true"></div>
-      <p class="cds-intro-sub">Enjoy the music on CDs with full-color artwork, or listen anytime with the <strong style="white-space:nowrap">Sing Rounds iPhone app</strong>.</p>
-    </div>
-    <div class="cds">
-      <div class="cd">
-        <img src="images/playlist-1-cd.jpg" alt="Playlist 1 CD in its case">
-        <h3>Playlist 1</h3>
-        <div class="meta">12 songs &middot; 57 minutes</div>
-        <div class="cd-div" aria-hidden="true"><span></span><i>&#10022;</i><span></span></div>
-        <div class="price">$15 <small>+ shipping</small></div>
-        <a class="img-link" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener"><img class="img-btn" src="images/btn/order-playlist-1.png" alt="Order Playlist 1" width="760" height="253"></a>
-      </div>
-      <div class="cd">
-        <img src="images/playlist-2-cd.jpg" alt="Playlist 2 CD in its case">
-        <h3>Playlist 2</h3>
-        <div class="meta">11 songs &middot; 55 minutes</div>
-        <div class="cd-div" aria-hidden="true"><span></span><i>&#10022;</i><span></span></div>
-        <div class="price">$15 <small>+ shipping</small></div>
-        <a class="img-link" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener"><img class="img-btn" src="images/btn/order-playlist-2.png" alt="Order Playlist 2" width="760" height="253"></a>
-      </div>
-      <div class="cd cd-app">
-        <span class="phone"><img src="images/app/1-home.jpg" alt="The Sing Rounds app home screen on iPhone"></span>
-        <h3>The iPhone App</h3>
-        <div class="meta">First 5 songs free</div>
-        <div class="cd-div" aria-hidden="true"><span></span><i>&#10022;</i><span></span></div>
-        <div class="price">$24.99 <small>/ year</small></div>
-        <a class="img-link" href="#app"><img class="img-btn" src="images/btn/explore-the-app.png" alt="Explore the App" width="760" height="253"></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="order" class="cds-sec order-sec">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="ornament"><span>&#10022;</span></div>
-      <h2>How to Order, Step by Step</h2>
-      <p>Ordering your CDs is easy! Follow these steps, and your music will be printed and mailed directly to your door.</p>
-    </div>
-    <div class="order-tips">
-      <svg class="tip-icon" viewBox="0 0 48 34" aria-hidden="true"><rect x="8" y="3" width="32" height="21" rx="2" fill="none" stroke="#13214a" stroke-width="3"/><path d="M2 28h44l-3 4H5z" fill="#13214a"/></svg>
-      <span class="tip-bar" aria-hidden="true"></span>
-      <p><strong class="tip-head">Ordering Tip:</strong> A computer works best. If you&rsquo;re using a phone, turn it <strong>sideways</strong> before you begin.</p>
-    </div>
-    <h3 class="see-head"><span></span>What You&rsquo;ll See on the Order Page<span></span></h3>
-    <figure class="howto-pic">
-      <a href="images/order-steps-green.jpg" target="_blank" rel="noopener"><img src="images/order-steps-green.jpg" alt="The order page with green numbers showing where to type the quantity (1), choose your state (2), type your zip code (3), and click Calculate Shipping (4)"></a><p class="zoom-tip">Tap the picture to see it bigger.</p>
-    </figure>
-    <div class="howto-steps">
-      <div class="howto-col">
-        <h3 class="page-label">First Page</h3>
-        <ol class="big-steps">
-          <li>Enter the number of CDs you want in the <strong>Quantity</strong> box.</li>
-          <li>Choose your <strong>state</strong>.</li>
-          <li>Type your <strong>zip code</strong>.</li>
-          <li>Click the green <strong>Calculate Shipping</strong> button.</li>
-        </ol>
-      </div>
-      <div class="howto-mid" aria-hidden="true"><i>&#10022;</i></div>
-      <div class="howto-col">
-        <h3 class="page-label">Second Page</h3>
-        <ol class="big-steps" start="5">
-          <li>Keep <strong>USPS First Class Mail</strong> (about $6, arrives in about a week).</li>
-          <li>Fill in your <strong>name, address, and email</strong>.</li>
-          <li>Click the green <strong>Check Out</strong> button and pay with PayPal or a card.</li>
-        </ol>
-      </div>
-    </div>
-    <div class="order-cta">
-      <a class="img-link big-order-img" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener"><img class="img-btn" src="images/btn/go-to-order-page.png" alt="Go to the Order Page" width="760" height="253"></a>
-      <p class="tip">The order page opens in a new tab so you can keep these directions handy.<br>
-      Need help? Email <a href="mailto:kjoysky31@gmail.com">kjoysky31@gmail.com</a></p>
-    </div>
-  </div>
-</section>
 
 <section class="playlist" id="playlist-1" style="--bg:url(images/scene-dance.jpg)">
   <div class="wrap">
@@ -935,12 +959,9 @@ section.hero{padding:0}
       </ol></div>
       </div>
       <div class="pl-side">
-        <img src="images/playlist-1-open.jpg" alt="Playlist 1 CD case opened, showing the disc and inside artwork">
-        <p class="preview-note">Each song sample is just a short part of the song.</p>
+        <img class="pl-cover" src="images/playlist-1-cd.jpg" alt="Playlist 1 CD cover">
         <p class="pl-price">$15 <small>+ shipping</small></p>
-        <a class="img-link pl-order-img" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener"><img class="img-btn" src="images/btn/order-playlist-1.png" alt="Order Playlist 1, $15" width="760" height="253"></a>
-        <a class="pl-how" href="#order">How to Order &rarr;</a>
-        <p class="pc-tip"><svg viewBox="0 0 48 34" aria-hidden="true"><rect x="8" y="3" width="32" height="21" rx="2" fill="none" stroke="#e8c66a" stroke-width="3"/><path d="M2 28h44l-3 4H5z" fill="#e8c66a"/></svg> Ordering is easiest on a computer.</p>
+        <a class="img-link pl-order-img" href="#order" data-cd="p1"><img class="img-btn" src="images/btn/order-playlist-1.png" alt="Order Playlist 1, $15" width="760" height="253"></a>
       </div>
     </div>
   </div>
@@ -971,12 +992,91 @@ section.hero{padding:0}
       </ol></div>
       </div>
       <div class="pl-side">
-        <img src="images/playlist-2-open.jpg" alt="Playlist 2 CD case opened, showing the disc and inside artwork">
-        <p class="preview-note">Each song sample is just a short part of the song.</p>
+        <img class="pl-cover" src="images/playlist-2-cd.jpg" alt="Playlist 2 CD cover">
         <p class="pl-price">$15 <small>+ shipping</small></p>
-        <a class="img-link pl-order-img" href="https://kunaki.com/MSales.asp?PublisherId=251305&amp;PP=1" target="_blank" rel="noopener"><img class="img-btn" src="images/btn/order-playlist-2.png" alt="Order Playlist 2, $15" width="760" height="253"></a>
-        <a class="pl-how" href="#order">How to Order &rarr;</a>
-        <p class="pc-tip"><svg viewBox="0 0 48 34" aria-hidden="true"><rect x="8" y="3" width="32" height="21" rx="2" fill="none" stroke="#e8c66a" stroke-width="3"/><path d="M2 28h44l-3 4H5z" fill="#e8c66a"/></svg> Ordering is easiest on a computer.</p>
+        <a class="img-link pl-order-img" href="#order" data-cd="p2"><img class="img-btn" src="images/btn/order-playlist-2.png" alt="Order Playlist 2, $15" width="760" height="253"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="order" class="cds-sec buy-sec">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="ornament"><span>&#10022;</span></div>
+      <h2>Order the CDs</h2>
+      <p class="buy-sub">Pay by credit card, debit card or PayPal.</p>
+    </div>
+    <div class="buy-wrap" id="orderForm">
+      <div class="step-box">
+        <h3><span class="snum">1</span> Choose Quantity of CDs</h3>
+        <div class="pick-grid">
+          <div class="pick" data-id="p1">
+            <img src="images/playlist-1-cd.jpg" alt="Playlist 1 CD" width="900" height="766">
+            <div class="pick-info">
+              <h4>Playlist 1</h4>
+              <div class="pmeta">12 songs &middot; 57 min</div>
+              <div class="pprice">$15.00</div>
+              <div class="qty" role="group" aria-label="How many Playlist 1 CDs">
+                <button type="button" class="q-minus" aria-label="One less Playlist 1">&minus;</button>
+                <span class="q-num" aria-live="polite">0</span>
+                <button type="button" class="q-plus" aria-label="One more Playlist 1">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="pick" data-id="p2">
+            <img src="images/playlist-2-cd.jpg" alt="Playlist 2 CD" width="900" height="766">
+            <div class="pick-info">
+              <h4>Playlist 2</h4>
+              <div class="pmeta">11 songs &middot; 55 min</div>
+              <div class="pprice">$15.00</div>
+              <div class="qty" role="group" aria-label="How many Playlist 2 CDs">
+                <button type="button" class="q-minus" aria-label="One less Playlist 2">&minus;</button>
+                <span class="q-num" aria-live="polite">0</span>
+                <button type="button" class="q-plus" aria-label="One more Playlist 2">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="buy-note">Shipping is <strong>$6.50</strong> for the whole order, no matter how many CDs.</p>
+      </div>
+
+      <div class="step-box">
+        <h3><span class="snum">2</span> Where Should I Mail Them?</h3>
+        <div class="form-grid">
+          <label class="c3">Full name<input id="f-name" autocomplete="name" required></label>
+          <label class="c3">Email <span class="hint">(for your receipt)</span><input id="f-email" type="email" autocomplete="email" required></label>
+          <label class="c4">Street address<input id="f-addr1" autocomplete="address-line1" required></label>
+          <label class="c2">Apt / suite <span class="hint">(optional)</span><input id="f-addr2" autocomplete="address-line2"></label>
+          <label class="c2">City<input id="f-city" autocomplete="address-level2" required></label>
+          <label class="c2">State<select id="f-state" autocomplete="address-level1" required><option value="">Choose&hellip;</option></select></label>
+          <label class="c2">ZIP code<input id="f-zip" inputmode="numeric" autocomplete="postal-code" maxlength="10" required></label>
+          <label class="c6" id="county-wrap" hidden>County <span class="hint">(for Minnesota sales tax)</span><select id="f-county"><option value="">Choose&hellip;</option></select></label>
+        </div>
+        <p class="buy-note">CDs ship to the United States only. Outside the U.S.? Email <a href="mailto:kjoysky31@gmail.com">kjoysky31@gmail.com</a>.</p>
+      </div>
+
+      <div class="step-box">
+        <h3><span class="snum">3</span> Pay</h3>
+        <table class="buy-sum">
+          <tr><td>CDs (<span id="s-count">0</span> &times; $15.00)</td><td id="s-items">$0.00</td></tr>
+          <tr><td>Shipping</td><td id="s-ship">$0.00</td></tr>
+          <tr id="tax-row" hidden><td>Minnesota sales tax (<span id="s-rate"></span>)</td><td id="s-tax">$0.00</td></tr>
+          <tr class="total"><td>Total</td><td id="s-total">$0.00</td></tr>
+        </table>
+        <p id="pay-msg" class="pay-msg">Please choose at least one CD and fill in your address above.</p>
+        <div id="pay-buttons" class="pay-buttons"></div>
+        <p class="fastlane-tip">If you pay by card, PayPal may show a box that says <strong>&ldquo;Save your info with Fastlane.&rdquo;</strong> It is optional. You can tap it to uncheck it.</p>
+        <p class="buy-note">&#128274; Your card is handled safely by PayPal. I never see your card number.<br>Questions? Email <a href="mailto:kjoysky31@gmail.com">kjoysky31@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="buy-wrap" id="thanks" hidden>
+      <div class="step-box thanks-box">
+        <h3 style="justify-content:center">Thank You!</h3>
+        <p>Your order is complete. Your receipt was sent to <strong id="t-email"></strong>.</p>
+        <p>Your CDs will be made and mailed within a few days. They usually arrive in about a week.</p>
+        <p class="small">Order number: <span id="t-id"></span></p>
       </div>
     </div>
   </div>
@@ -995,6 +1095,7 @@ section.hero{padding:0}
       <p class="tap-hint"><svg viewBox="0 0 60 50" aria-hidden="true"><path d="M54 40 C30 44 12 34 10 8" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M1 16 L10 3 L19 16" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tap the button to download the app!</span></p>
       <p class="app-shots-tip">A look inside the app</p>
       <div class="app-shots"><span class="phone"><img src="images/app/0-welcome.jpg" alt="Welcome screen" loading="lazy"></span><span class="phone"><img src="images/app/1-home.jpg" alt="Library with all playlists" loading="lazy"></span><span class="phone"><img src="images/app/2-playlist.jpg" alt="A playlist page" loading="lazy"></span><span class="phone"><img src="images/app/3-nowplaying.jpg" alt="Now Playing with the song painting" loading="lazy"></span><span class="phone"><img src="images/app/4-lyrics.jpg" alt="Big, easy-to-read lyrics" loading="lazy"></span><span class="phone"><img src="images/app/5-about.jpg" alt="About the Rounds" loading="lazy"></span><span class="phone"><img src="images/app/6-favorites.jpg" alt="Your Favorites" loading="lazy"></span></div>
+      <div class="app-two">
       <div class="app-feat-box">
       <h3 class="app-benefits-head" id="app-features">Fe<span id="featA">a</span>tures of the App</h3>
       <ul class="app-list">
@@ -1012,6 +1113,7 @@ section.hero{padding:0}
         <p>In other words, the songs are always free on the <a href="https://www.littlechildreninthedivinewill.com/sing-rounds-playlists">Little Children in the Divine Will</a> website. <strong>Those who subscribe to the app are simply paying for an ad-free, easy way to keep all the songs in one place and pray their favorites again and again.</strong></p>
         <p style="margin-bottom:0">More songs are on the way! When I add new songs, they show up in the app on their own, so there is no need to keep checking back on the Little Children website.</p>
       </div>
+      </div>
       <p class="app-note" style="margin-bottom:18px">The first 5 songs are free in the app. The full library is $24.99 a year or $4.99 a month.</p>
       <div class="app-why-pay">
         <h3>Why Does the App Cost Money?</h3>
@@ -1025,7 +1127,6 @@ section.hero{padding:0}
         <p>Your subscription helps cover these costs and lets me keep making new songs, which show up in the app on their own.</p>
         <p style="margin-bottom:0">If the app is not in your budget, that is okay! Every song is still <a href="https://www.littlechildreninthedivinewill.com/sing-rounds-playlists" target="_blank" rel="noopener">free to download</a> on the Little Children in the Divine Will website.</p>
       </div>
-      <div style="text-align:center;margin-top:18px"><a class="app-badge" href="https://apps.apple.com/us/app/sing-divine-will-rounds/id6831215446" target="_blank" rel="noopener"><img src="images/app-store-badge.svg" alt="Download on the App Store"></a></div>
     </div></div>
   </div>
 </section>
@@ -1035,6 +1136,15 @@ section.hero{padding:0}
 
 
 
+
+
+
+
+
+<section class="lyrics-strip"><div class="wrap"><p class="lyrics-line">
+      <svg class="book" viewBox="0 0 48 30" aria-hidden="true"><path d="M24 6C18 2 9 2 3 4v22c6-2 15-2 21 2 6-4 15-4 21-2V4c-6-2-15-2-21 2z" fill="#fbf0d0" stroke="#c9a046" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 6v22" stroke="#c9a046" stroke-width="2.4"/></svg>
+      Want to sing along? <a href="lyrics/Sing-Divine-Will-Rounds-Lyrics.pdf" target="_blank" rel="noopener">Download the free lyrics (PDF) &rarr;</a>
+    </p></div></section>
 <section class="closing-quote" style="--bg:url(images/scene-dance.jpg)">
   <div class="wrap">
     <div class="ornament"><span>&#10022;</span></div>
@@ -1054,11 +1164,6 @@ section.hero{padding:0}
   </div>
 </section>
 
-
-<section class="lyrics-strip"><div class="wrap"><p class="lyrics-line">
-      <svg class="book" viewBox="0 0 48 30" aria-hidden="true"><path d="M24 6C18 2 9 2 3 4v22c6-2 15-2 21 2 6-4 15-4 21-2V4c-6-2-15-2-21 2z" fill="#fbf0d0" stroke="#c9a046" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 6v22" stroke="#c9a046" stroke-width="2.4"/></svg>
-      Want to sing along? <a href="lyrics/Sing-Divine-Will-Rounds-Lyrics.pdf" target="_blank" rel="noopener">Download the free lyrics (PDF) &rarr;</a>
-    </p></div></section>
 </main>
 
 <footer>
@@ -1145,5 +1250,8 @@ n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(
 (function(){function f(){var a=document.getElementById('featA'),u=document.querySelector('.app-feat-box .app-list');if(!a||!u)return;u.style.setProperty('padding-left','0px','important');var x=a.getBoundingClientRect().left-u.getBoundingClientRect().left;if(window.innerWidth>700)u.style.setProperty('padding-left',Math.max(0,x)+'px','important');}
 window.addEventListener('load',f);window.addEventListener('resize',f);if(document.fonts)document.fonts.ready.then(f);})();
 </script>
+<script src="js/mn-tax-rates.js"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=BAAwH-Pu5FAdfPAn452GEohkPMu3FQ4ezVN3_DreC3aNzDu6E2MeZ7YUvB_LPf6eECbDmoWDxprcmJVgS8&currency=USD&intent=capture&enable-funding=card&disable-funding=paylater,venmo,credit"></script>
+<script src="js/order.js"></script>
 </body>
 </html>

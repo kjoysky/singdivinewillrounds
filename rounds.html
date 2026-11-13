@@ -260,6 +260,30 @@ footer{padding:30px 0}
 .why-list li::before{content:"\2726";position:absolute;left:0;top:0;color:var(--gold)}
 @media (min-width:861px){.why-list li{font-size:20px}}
 .read .app-why-pay{margin-top:34px}.read .app-why-pay h3{margin:0 0 12px}
+
+/* smaller section headings (11/13) */
+h2{font-size:clamp(24px,2.6vw,30px)!important;margin-bottom:8px!important}
+.ornament{max-width:220px;margin-bottom:6px!important;gap:10px}
+.ornament span{font-size:15px}
+
+/* compact pass (11/13): same words, less scrolling */
+section{padding:34px 0!important}
+.read{max-width:940px!important}
+@media (min-width:861px){body{font-size:18px!important}.quote{font-size:17px!important}}
+p{margin:0 0 .7em}
+.quote{margin:14px 0 18px!important;padding:18px 24px 16px 58px!important;line-height:1.5}
+.quote::before{font-size:54px!important;left:14px!important}
+.quote p{margin:0 0 .55em!important}
+.quote cite{margin-top:8px!important;font-size:14px!important}
+.says{margin:16px 0 -6px!important;font-size:15px!important}
+.purpose{margin-top:28px!important}
+.purpose-head{margin-bottom:8px!important;gap:12px!important}
+.purpose-head .n{flex:0 0 40px!important;height:40px!important;font-size:18px!important}
+.purpose-head h3,.read h3{font-size:20px!important}
+.callout{margin:18px 0!important;padding:14px 20px!important;font-size:19px!important}
+.exclaim{margin:22px 0 0!important;font-size:18px!important}
+.life{padding:26px 0!important}
+@media (max-width:600px){.quote{padding:40px 16px 14px!important;font-size:17px!important}.quote::before{top:-2px!important}}
 </style>
 <script>
 (function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
@@ -272,12 +296,12 @@ footer{padding:30px 0}
     <a class="brand" href="index.html">SING DIVINE WILL ROUNDS</a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="sitenav">&#9776; Menu</button>
     <nav class="nav" id="sitenav">
-      <a href="index.html#cds">The CDs</a>
+      <a href="index.html#playlist-1">The CDs</a>
       <a href="index.html#playlist-1">Songs</a>
       <a href="index.html#app">The App</a>
       <a href="about.html">About</a>
       <a href="rounds.html" class="on">What Are Rounds?</a>
-      <a href="index.html#order">How to Order</a>
+      <a href="index.html#order">Order the CDs</a>
     </nav>
   </div>
 </header>
@@ -475,7 +499,7 @@ footer{padding:30px 0}
     <div class="ornament"><span>&#10022;</span></div>
     <p>So as you can see, the above is why the Rounds are much more than a beautiful meditation or everyday Christian prayer. It is a participation in the <strong>LIFE</strong> of God Himself.</p>
     <div class="ctas">
-      <a class="btn btn-gold" href="index.html#cds">See the CDs</a>
+      <a class="btn btn-gold" href="index.html#playlist-1">See the CDs</a>
       <a class="btn btn-ghost" href="index.html#playlist-1">Hear Song Samples</a>
     </div>
   </div>
@@ -557,7 +581,7 @@ footer{padding:30px 0}
     <div class="cd-end">
       <p>Ready to hear the Round songs?</p>
       <div class="ctas">
-        <a class="btn btn-gold" href="index.html#cds">See the CDs</a>
+        <a class="btn btn-gold" href="index.html#playlist-1">See the CDs</a>
         <a class="btn btn-ghost" href="index.html#playlist-1">Hear Song Samples</a>
       </div>
     </div>
