@@ -889,6 +889,11 @@ section.hero{padding:0}
 .hero-gold{margin-top:min(14px,1.8vh);height:clamp(48px,7.4vh,80px);display:inline-flex;align-items:center;padding:0 28px!important;font-size:clamp(15px,2.3vh,22px)!important;background:linear-gradient(180deg,var(--gold-2),var(--gold));color:var(--navy);border:2.5px solid var(--navy);box-shadow:0 6px 18px rgba(0,0,0,.35);text-decoration:none}
 .show-group:hover .hero-gold{background:linear-gradient(180deg,#f0d483,var(--gold-2))}
 @media (max-width:600px){.hero-gold{height:60px;font-size:17px!important}}
+
+/* hero buttons on ONE line, same height (11/13) */
+.col-cta-app{gap:14px}
+.col-cta .btn{text-decoration:none}
+@media (max-width:600px){.col-cta-app{flex-wrap:wrap;height:auto!important}.col-cta-app .btn,.col-cta-app .hero-badge{height:56px!important}}
 </style>
 <script>
 (function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
@@ -927,8 +932,7 @@ section.hero{padding:0}
           <span class="phone"><img src="images/app/1-home.jpg" alt="The Sing Rounds app home screen"></span>
           <span class="phone"><img src="images/app/3-nowplaying.jpg" alt="The Sing Rounds app playing a song"></span>
         </div>
-        <span class="btn hero-gold">Learn About the App</span>
-      </a><div class="col-cta"><a class="hero-badge" href="https://apps.apple.com/us/app/sing-divine-will-rounds/id6831215446" target="_blank" rel="noopener"><img src="images/app-store-badge.svg" alt="Download the Sing Divine Will Rounds app on the App Store"></a></div></div>
+      </a><div class="col-cta col-cta-app"><a class="btn" href="#app">Learn About the App</a><a class="hero-badge" href="https://apps.apple.com/us/app/sing-divine-will-rounds/id6831215446" target="_blank" rel="noopener"><img src="images/app-store-badge.svg" alt="Download the Sing Divine Will Rounds app on the App Store"></a></div></div>
     </div>
   </div>
 </section>
@@ -1172,7 +1176,6 @@ section.hero{padding:0}
     <div class="ornament"><span>&#10022;</span></div>
     <div class="links">
       <a href="https://littlechildreninthedivinewill.com" target="_blank" rel="noopener">Little Children in the Divine Will</a>
-      <a href="https://www.kristinajoy.com/kristinajoy" target="_blank" rel="noopener">Meet Kristina Joy</a>
     </div>
     <div class="contact">Questions? Email <a href="mailto:kjoysky31@gmail.com">kjoysky31@gmail.com</a></div>
     <div class="copy">&copy; 2026 Kristina Joy Nelson. All rights reserved.</div>
