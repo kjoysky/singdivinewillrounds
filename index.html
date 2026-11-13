@@ -901,6 +901,15 @@ section.hero{padding:0}
 .qty button:hover:not(:disabled){filter:brightness(1.1)}
 .qty button:disabled{opacity:.4}
 .qty-hint{font-size:15px;color:#1f7a45;font-weight:700;margin:-6px 0 10px;text-align:center}
+
+/* thank-you popup after payment (11/13) */
+.thanks-pop{position:fixed;inset:0;z-index:9999;background:rgba(19,33,74,.6);display:flex;align-items:center;justify-content:center;padding:18px}
+.thanks-card{background:#fff;border:2px solid var(--gold);border-radius:18px;max-width:460px;width:100%;padding:24px 24px 20px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.thanks-card .tp-check{width:60px;height:60px;border-radius:50%;background:#1f7a45;color:#fff;font-size:34px;line-height:60px;margin:0 auto 10px}
+.thanks-card h3{font-family:Cinzel,Georgia,serif;color:var(--navy);font-size:26px;margin:0 0 8px}
+.thanks-card p{font-size:17px;margin:0 0 10px}
+.thanks-card .tp-id{font-size:14px;color:var(--muted)}
+.thanks-card .btn{margin-top:6px;border:0;cursor:pointer;font-size:18px;padding:12px 40px}
 </style>
 <script>
 (function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
@@ -1088,7 +1097,7 @@ section.hero{padding:0}
     <div class="buy-wrap" id="thanks" hidden>
       <div class="step-box thanks-box">
         <h3 style="justify-content:center">Thank You!</h3>
-        <p>Your order is complete. Your receipt was sent to <strong id="t-email"></strong>.</p>
+        <p><strong>Your order is complete and is being processed.</strong> Your receipt was sent to <strong id="t-email"></strong>.</p>
         <p>Your CDs will be made and mailed within a few days. They usually arrive in about a week.</p>
         <p class="small">Order number: <span id="t-id"></span></p>
       </div>
@@ -1265,6 +1274,6 @@ window.addEventListener('load',f);window.addEventListener('resize',f);if(documen
 </script>
 <script src="js/mn-tax-rates.js"></script>
 <script src="https://www.paypal.com/sdk/js?client-id=BAAwH-Pu5FAdfPAn452GEohkPMu3FQ4ezVN3_DreC3aNzDu6E2MeZ7YUvB_LPf6eECbDmoWDxprcmJVgS8&currency=USD&intent=capture&enable-funding=card&disable-funding=paylater,venmo,credit"></script>
-<script src="js/order.js"></script>
+<script src="js/order.js?v=2"></script>
 </body>
 </html>
