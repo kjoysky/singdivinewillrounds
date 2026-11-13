@@ -96,12 +96,15 @@
     style:{layout:'vertical',shape:'pill',height:52,label:'pay'},
     onClick:function(d,actions){var m=problem(true);if(m){$('pay-msg').textContent=m;$('pay-msg').scrollIntoView({behavior:'smooth',block:'center'});return actions.reject();}return actions.resolve();},
     createOrder:function(d,actions){return actions.order.create(order());},
-    onApprove:function(d,actions){return actions.order.capture().then(function(r){
+    onApprove:function(d,actions){
+      var wait=document.createElement('div'); wait.className='thanks-pop'; wait.innerHTML='<div class="thanks-card"><div class="tp-spin"></div><h3>Processing your payment&hellip;</h3><p>Please wait a moment.</p></div>'; document.body.appendChild(wait);
+      return actions.order.capture().then(function(r){
+      wait.remove();
       var em=$('f-email').value.trim(), id=r.id||d.orderID;
       $('t-email').textContent=em; $('t-id').textContent=id;
       $('orderForm').hidden=true; $('thanks').hidden=false;
       showThanks(em,id);
-    }).catch(function(e){console.error(e);$('pay-msg').textContent='Sorry, the payment did not go through. Please try again, or email kjoysky31@gmail.com.';$('pay-msg').scrollIntoView({block:'center'});});},
+    }).catch(function(e){wait.remove();console.error(e);$('pay-msg').textContent='Sorry, the payment did not go through. Please try again, or email kjoysky31@gmail.com.';$('pay-msg').scrollIntoView({block:'center'});});},
     onError:function(e){console.error(e);$('pay-msg').textContent='Sorry, something went wrong with the payment. Nothing was charged. Please try again, or email kjoysky31@gmail.com.';}
   };}
   function render(){

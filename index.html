@@ -910,6 +910,8 @@ section.hero{padding:0}
 .thanks-card p{font-size:17px;margin:0 0 10px}
 .thanks-card .tp-id{font-size:14px;color:var(--muted)}
 .thanks-card .btn{margin-top:6px;border:0;cursor:pointer;font-size:18px;padding:12px 40px}
+.tp-spin{width:46px;height:46px;border-radius:50%;border:5px solid var(--cream-2);border-top-color:#1f7a45;margin:4px auto 12px;animation:tpspin .9s linear infinite}
+@keyframes tpspin{to{transform:rotate(360deg)}}
 </style>
 <script>
 (function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
@@ -1274,6 +1276,6 @@ window.addEventListener('load',f);window.addEventListener('resize',f);if(documen
 </script>
 <script src="js/mn-tax-rates.js"></script>
 <script src="https://www.paypal.com/sdk/js?client-id=BAAwH-Pu5FAdfPAn452GEohkPMu3FQ4ezVN3_DreC3aNzDu6E2MeZ7YUvB_LPf6eECbDmoWDxprcmJVgS8&currency=USD&intent=capture&enable-funding=card&disable-funding=paylater,venmo,credit"></script>
-<script src="js/order.js?v=2"></script>
+<script src="js/order.js?v=3"></script>
 </body>
 </html>
