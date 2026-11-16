@@ -1265,8 +1265,8 @@ n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(
 (function(){function f(){var a=document.getElementById('featA'),u=document.querySelector('.app-feat-box .app-list');if(!a||!u)return;u.style.setProperty('padding-left','0px','important');var x=a.getBoundingClientRect().left-u.getBoundingClientRect().left;if(window.innerWidth>700)u.style.setProperty('padding-left',Math.max(0,x)+'px','important');}
 window.addEventListener('load',f);window.addEventListener('resize',f);if(document.fonts)document.fonts.ready.then(f);})();
 </script>
-<script src="js/mn-tax-rates.js"></script>
+<script src="js/mn-tax-rates.js?v=4"></script>
+<script src="js/order.js?v=4"></script>
 <script src="https://www.paypal.com/sdk/js?client-id=BAAwH-Pu5FAdfPAn452GEohkPMu3FQ4ezVN3_DreC3aNzDu6E2MeZ7YUvB_LPf6eECbDmoWDxprcmJVgS8&currency=USD&intent=capture&enable-funding=card&disable-funding=paylater,venmo,credit"></script>
-<script src="js/order.js?v=3"></script>
 </body>
 </html>

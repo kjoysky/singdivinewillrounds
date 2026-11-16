@@ -14,7 +14,7 @@
 
   /* Minnesota rate: county list for the city -> city-only tax -> rest of county -> state */
   function mnRate(){
-    var T=window.MN_TAX, city=norm($('f-city').value), cnty=norm(co.value), c=T.counties[cnty];
+    var T=window.MN_TAX||{counties:{},cities:{},state:6.875}, city=norm($('f-city').value), cnty=norm(co.value), c=T.counties[cnty];
     if(c && c[city]!=null) return c[city];
     if(T.cities[city]!=null) return T.cities[city];
     if(c && c._rest!=null) return c._rest;
@@ -111,7 +111,15 @@
     if(!window.paypal){$('pay-msg').textContent='The payment buttons did not load. Please refresh the page.';return;}
     [paypal.FUNDING.CARD,paypal.FUNDING.PAYPAL].forEach(function(f){var b=paypal.Buttons(opts(f));if(b.isEligible())b.render('#pay-buttons');});
   }
-  if(document.readyState==='complete')render();else window.addEventListener('load',render);
+  /* The + buttons work right away; the PayPal buttons are added when PayPal finishes loading
+     (keeps trying for 30 seconds in case PayPal is slow). */
+  var tries=0;
+  function whenReady(){
+    if(window.paypal){render();return;}
+    if(++tries>60){render();return;}
+    setTimeout(whenReady,500);
+  }
+  if(document.readyState==='complete')whenReady();else window.addEventListener('load',whenReady);
 })();
 /* "Order Playlist 1/2" buttons: jump to the form and pick that CD */
 document.querySelectorAll('a[data-cd]').forEach(function(a){a.addEventListener('click',function(){
