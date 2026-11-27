@@ -408,6 +408,16 @@ section#about{padding:30px 0 36px}
 .about-main > .how-made:first-child h3{margin-top:0}
 .about-main .how-made{margin:0 0 22px}
 .about-main .how-made h3{margin:0 0 10px}
+/* Using Technology for Good (saints) */
+.tech-good .saint{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1px solid var(--gold);border-left:4px solid var(--gold);border-radius:12px;padding:16px 18px;margin:14px 0}
+.tech-good .saint img{width:110px;height:110px;object-fit:cover;object-position:center top;border-radius:50%;border:3px solid var(--gold);flex:none;box-shadow:0 6px 14px rgba(19,33,74,.15)}
+.tech-good .saint p{margin:0 0 8px}
+.tech-good .saint-name{font-family:Cinzel,Georgia,serif;font-weight:700;color:var(--navy);font-size:20px}
+.tech-good .saint-name span{font-family:Georgia,serif;font-weight:400;font-size:16px;color:var(--muted)}
+.tech-good .saint-cite{font-size:15px;color:var(--muted)}
+.tech-good blockquote{margin:6px 0 0;padding:10px 14px;background:var(--cream,#fbf5e6);border-radius:8px;color:var(--navy);font-style:normal}
+.tech-good blockquote cite{display:block;font-size:15px;color:var(--muted);font-style:normal;margin-top:4px}
+@media (max-width:600px){.tech-good .saint{flex-direction:column;align-items:center;text-align:center}.tech-good .saint img{width:120px;height:120px}}
 </style>
 <script>
 (function(){function z(){var w=window.innerWidth,v=Math.max(1,Math.min(w/1250,1.7));document.documentElement.style.setProperty('--z',v.toFixed(3));}z();window.addEventListener('resize',z);})();
@@ -466,6 +476,28 @@ section#about{padding:30px 0 36px}
           </div>
           <p style="text-align:center;font-style:italic;color:var(--navy);margin-top:0">&ldquo;Creation with You&rdquo;</p>
         </div>
+      </div>
+      <div class="how-made tech-good" id="technology-for-good">
+        <h3>Using Technology for Good</h3>
+        <p>Technology can be used for evil or for good. I want to use the tools available today&mdash;computers, the internet, and AI&mdash;for God&rsquo;s glory, to help spread the Gospel and the Divine Will through music. Two saints show the way:</p>
+        <div class="saint">
+          <img src="images/saints/kolbe.jpg" alt="St. Maximilian Kolbe" width="400" height="400" loading="lazy">
+          <div>
+            <p class="saint-name">St. Maximilian Kolbe <span>(1894&ndash;1941)</span></p>
+            <p>He printed the magazine <em>Knight of the Immaculata</em> on modern presses and started Poland&rsquo;s first Catholic radio station in 1938. When a visitor asked what St. Francis would say about the expensive printing machines, he answered:</p>
+            <blockquote>&ldquo;He would roll up the sleeves of his habit, he would run the machines at full speed, and he would work alongside these good Brothers using such modern means to spread the glory of God and the Immaculate Virgin Mary.&rdquo;</blockquote>
+          </div>
+        </div>
+        <div class="saint">
+          <img src="images/saints/carlo.jpg" alt="St. Carlo Acutis" width="400" height="400" loading="lazy">
+          <div>
+            <p class="saint-name">St. Carlo Acutis <span>(1991&ndash;2006)</span></p>
+            <p>A teenage computer whiz who built a website about the Eucharistic miracles of the world. Pope Francis wrote that Carlo &ldquo;knew how to use the new communications technology to transmit the Gospel, to communicate values and beauty.&rdquo;</p>
+            <p class="saint-cite">Pope Francis, <em>Christus Vivit</em>, 105</p>
+            <blockquote>&ldquo;Everyone is born as an original, but many people end up dying as photocopies.&rdquo;<cite>St. Carlo Acutis</cite></blockquote>
+          </div>
+        </div>
+        <p>Like them, I pray that every phone, computer, and CD player that plays these songs becomes a little doorway to Jesus.</p>
       </div>
       <div class="how-made">
         <h3>The Most Important Part Is YOU!</h3>
